@@ -1,0 +1,27 @@
+.c-links__title {
+  padding-bottom: $unit-small;
+  margin-bottom: $unit;
+  border-bottom: 1px solid #eee;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.c-links {
+  padding-top: $unit-large;
+  padding-bottom: $unit-large;
+  li {
+    margin-bottom: $unit-tiny;
+  }
+  a {
+    display: inline-block;
+    width: 100%;
+    transition: all 0.2s;
+    &:hover {
+      color: $color-brand-primary;
+    }
+  }
+}
+
+.c-links__quick-links, .c-links__best-recipe, .c-links__classic {
+  padding-left: $unit;
+}

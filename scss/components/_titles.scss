@@ -1,0 +1,30 @@
+.section-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  margin-bottom: 26px;
+  span{
+
+    padding-left: $unit;
+    padding-right: $unit;
+  }
+  strong{
+    font-weight: 700;
+    color: $color-brand-primary;
+  }
+}
+
+.section-title:before {
+  content: "";
+  height: 1px;
+  background: #eee;
+  flex: 1;
+}
+
+.section-title:after {
+  content: "";
+  height: 1px;
+  background: #eee;
+  flex: 1;
+}

@@ -1,0 +1,108 @@
+.c-footer {
+  background: $color-brand-primary url("../../img/home/basmaty-pattern2.png") no-repeat center bottom; /*??*/
+  background-size: 100%, contain;
+  border-top: 5px solid $color-brand-secondary;
+  box-shadow: inset 0px 4px 10px #0000001a;
+  color: $color-white;
+  padding-top: $unit-large;
+  padding-bottom: $unit-large;
+
+}
+
+.c-footer__quick-links {
+  margin-bottom: $unit-huge;
+  margin-left: $unit-large;
+  @include mq($from: tablet) {
+    margin-left: $unit-huge;
+  }
+  .c-footer__logo {
+    a {
+      display: inline-block;
+      background: url(../../img/home/logo-white.png) no-repeat;
+      background-size: 100px 100px;
+      height: 40px;
+    }
+  }
+
+}
+
+.c-footer__social-links {
+  margin-bottom: $unit-huge;
+  margin-left: $unit-large;
+  @include mq($from: tablet) {
+    margin-left: $unit-huge;
+  }
+
+}
+
+.c-footer__social-media {
+  li {
+    display: inline-block;
+    margin-right: $unit-tiny;
+  }
+  a {
+    display: inline-block;
+    svg {
+      fill: #fff;
+      width: 32px;
+      height: 32px;
+      transition: fill 0.2s ease-in-out;
+      &:hover {
+        fill: #f2e3b9;
+      }
+    }
+  }
+}
+
+.c-footer__app-links {
+  li {
+    display: inline-block;
+    margin-bottom: $unit;
+
+    @include mq($from: desktop) {
+      margin-right: $unit;
+    }
+
+  }
+  a {
+    display: inline-block;
+    padding: $unit;
+
+    height: 63px;
+    width: 158px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 7px;
+  }
+}
+
+.c-footer__site-map {
+  li {
+    margin-bottom: $unit-tiny;
+  }
+  a {
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+.c-footer__about-link {
+  margin-left: $unit-large;
+}
+
+.c-footer__title {
+  padding-bottom: $unit-small;
+  border-bottom: 1px solid #00000012;
+  margin-bottom: $unit;
+  font-weight: 700;
+}
+
+.c-footer__app-kinks--android {
+  display: flex;
+  align-items: center;
+  .android--icon {
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
