@@ -1,8 +1,7 @@
 .c-footer {
-  background: $color-brand-primary url("../../img/home/basmaty-pattern2.png") no-repeat center bottom; /*??*/
+  background: $color-brand-primary url("../img/home/basmaty-pattern2.png") no-repeat center bottom; /*??*/
   background-size: 100%, contain;
   border-top: 5px solid $color-brand-secondary;
-  box-shadow: inset 0px 4px 10px #0000001a;
   color: $color-white;
   padding-top: $unit-large;
   padding-bottom: $unit-large;
@@ -18,9 +17,8 @@
   .c-footer__logo {
     a {
       display: inline-block;
-      background: url(../../img/home/logo-white.png) no-repeat;
-      background-size: 100px 100px;
-      height: 40px;
+      background-size: 100% 100%;
+      width: 180px;
     }
   }
 

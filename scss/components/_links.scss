@@ -7,8 +7,7 @@
 }
 
 .c-links {
-  padding-top: $unit-large;
-  padding-bottom: $unit-large;
+  padding-left: $unit;
   li {
     margin-bottom: $unit-tiny;
   }
@@ -22,6 +21,3 @@
   }
 }
 
-.c-links__quick-links, .c-links__best-recipe, .c-links__classic {
-  padding-left: $unit;
-}

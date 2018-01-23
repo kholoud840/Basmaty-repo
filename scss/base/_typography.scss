@@ -1,27 +1,26 @@
 @font-face {
   font-family: 'SSTArabic-bold';
   src:
-          url("/fonts/SSTBold/SSTArabicBold.woff2"),
-          url('/fonts/SSTBold/SSTArabicBold.woff') format('woff'),
-          url("/fonts/SSTBold/SSTArabicBold.ttf")  format('truetype');
+          url("../fonts/SSTBold/SSTArabicBold.woff2"),
+          url('../fonts/SSTBold/SSTArabicBold.woff') format('woff'),
+          url("../fonts/SSTBold/SSTArabicBold.ttf")  format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'sstarabicroman-regular';
-  src: url('../../fonts/sstroman/sstarabicroman.woff2'),
-  url('/fonts/sstroman/SSTArabicRoman.woff') format('woff'),
-  url('../../fonts/sstroman/SSTArabicRoman.ttf') format('truetype');
+  src: url('../fonts/sstroman/sstarabicroman.woff2'),
+  url('../fonts/sstroman/SSTArabicRoman.woff') format('woff'),
+  url('../fonts/sstroman/SSTArabicRoman.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 body {
-  //font-family: sans-serif;
+  font-family: sans-serif;
   @include basefont-regular;
   background: #fff;
-  font-family: 'Cairo', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

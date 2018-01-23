@@ -1,11 +1,8 @@
 .c-header {
   box-shadow: 0 0 4px #00000047;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
   position: relative;
-
   background-image: linear-gradient(to right, $color-brand-secondary, $color-brand-primary);
-  background-size: 100% 3px;
+  background-size: 100% 4px;
   background-repeat: no-repeat;
   background-position: top center;
   svg {
@@ -32,9 +29,6 @@
   }
 }
 
-.c-header__logo {
-  //text-align: center;
-}
 
 .c-header__item {
   border-bottom: 1px solid #ccc;
@@ -61,6 +55,35 @@
   }
 }
 
+
+.c-header__menu.open {
+
+  @media (max-width: 740px){
+    display: block;
+    background: $color-white;
+    box-shadow: 0 0 4px #00000047;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 100%;
+    z-index: 1;
+    .header__menu__item {
+      border-bottom: 1px solid #eee;
+      a {
+        display: inline-block;
+        padding: $unit-small $unit;
+        width: 100%;
+        //padding: $unit;
+      }
+
+      a.active {
+        border-right: 2px solid $color-brand-primary;
+      }
+    }
+  }
+
+}
+
 .c-header__menu {
   display: none;
   @include mq($from: tablet) {
@@ -79,29 +102,6 @@
   }
 }
 
-.c-header__menu.open {
-  display: block;
-  background: $color-white;
-  box-shadow: 0 0 4px #00000047;
-  position: absolute;
-  right: 0;
-  left: 0;
-  top: 100%;
-
-  .header__menu__item {
-    border-bottom: 1px solid #eee;
-    a {
-      display: inline-block;
-      padding: $unit-small $unit;
-      width: 100%;
-      //padding: $unit;
-    }
-
-    a.active {
-      border-right: 2px solid $color-brand-primary;
-    }
-  }
-}
 
 .c-header__logo {
   @include mq($from: tablet) {
@@ -112,6 +112,7 @@
 .c-header__social-links {
   @include mq($from: tablet) {
     order: 2;
+    margin-right: auto;
   }
 }
 
@@ -131,11 +132,9 @@
 .c-header__logo {
   a {
     display: inline-block;
-    background: url(/img/home/logo.png) no-repeat;
-    //background-size: contain;
-    background-size: 100px 100px;
-    //width: 100%;
-    height: 30px;
+    width: 150px;
+    padding-top: 20px ;
+    padding-bottom: 20px;
   }
 }
 

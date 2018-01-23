@@ -115,18 +115,18 @@ img {
 
 @font-face {
   font-family: 'SSTArabic-bold';
-  src: url("/fonts/SSTBold/SSTArabicBold.woff2"), url("/fonts/SSTBold/SSTArabicBold.woff") format("woff"), url("/fonts/SSTBold/SSTArabicBold.ttf") format("truetype");
+  src: url("../fonts/SSTBold/SSTArabicBold.woff2"), url("../fonts/SSTBold/SSTArabicBold.woff") format("woff"), url("../fonts/SSTBold/SSTArabicBold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: 'sstarabicroman-regular';
-  src: url("../../fonts/sstroman/sstarabicroman.woff2"), url("/fonts/sstroman/SSTArabicRoman.woff") format("woff"), url("../../fonts/sstroman/SSTArabicRoman.ttf") format("truetype");
+  src: url("../fonts/sstroman/sstarabicroman.woff2"), url("../fonts/sstroman/SSTArabicRoman.woff") format("woff"), url("../fonts/sstroman/SSTArabicRoman.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 body {
-  font-family: "sstarabicroman-regular" ,sans-serif;
+  font-family: sans-serif;
+  font-family: "sstarabicroman-regular";
   background: #fff;
-  font-family: 'Cairo', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
@@ -147,20 +147,25 @@ html {
 
 .o-layout--3 {
   display: grid;
-  grid-gap: 8px;
+  grid-gap: 16px;
   grid-template-rows: 1fr;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); }
   @media (min-width: 700px) {
     .o-layout--3 {
       grid-template-columns: repeat(3, 1fr); } }
 
+.c-section {
+  padding-top: 32px;
+  padding-bottom: 32px; }
+
+.c-section--light {
+  background: #F9F9F8; }
+
 .c-header {
   box-shadow: 0 0 4px #00000047;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
   position: relative;
   background-image: linear-gradient(to right, #F4AC29, #E25C1C);
-  background-size: 100% 3px;
+  background-size: 100% 4px;
   background-repeat: no-repeat;
   background-position: top center; }
   .c-header svg {
@@ -196,6 +201,25 @@ html {
   .c-header__social-links {
     display: block; } }
 
+@media (max-width: 740px) {
+  .c-header__menu.open {
+    display: block;
+    background: #f3f3f3;
+    box-shadow: 0 0 4px #00000047;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 100%;
+    z-index: 1; }
+    .c-header__menu.open .header__menu__item {
+      border-bottom: 1px solid #eee; }
+      .c-header__menu.open .header__menu__item a {
+        display: inline-block;
+        padding: 8px 16px;
+        width: 100%; }
+      .c-header__menu.open .header__menu__item a.active {
+        border-right: 2px solid #E25C1C; } }
+
 .c-header__menu {
   display: none; }
   @media (min-width: 46.25em) {
@@ -209,30 +233,14 @@ html {
         color: #E25C1C;
         font-weight: 700; } }
 
-.c-header__menu.open {
-  display: block;
-  background: #f3f3f3;
-  box-shadow: 0 0 4px #00000047;
-  position: absolute;
-  right: 0;
-  left: 0;
-  top: 100%; }
-  .c-header__menu.open .header__menu__item {
-    border-bottom: 1px solid #eee; }
-    .c-header__menu.open .header__menu__item a {
-      display: inline-block;
-      padding: 8px 16px;
-      width: 100%; }
-    .c-header__menu.open .header__menu__item a.active {
-      border-right: 2px solid #E25C1C; }
-
 @media (min-width: 46.25em) {
   .c-header__logo {
     order: 0; } }
 
 @media (min-width: 46.25em) {
   .c-header__social-links {
-    order: 2; } }
+    order: 2;
+    margin-right: auto; } }
 
 .c-header__user-actions span {
   display: none; }
@@ -244,16 +252,15 @@ html {
 
 .c-header__logo a {
   display: inline-block;
-  background: url(/img/home/logo.png) no-repeat;
-  background-size: 100px 100px;
-  height: 30px; }
+  width: 150px;
+  padding-top: 20px;
+  padding-bottom: 20px; }
 
 .c-footer {
-  background: #E25C1C url("../../img/home/basmaty-pattern2.png") no-repeat center bottom;
+  background: #E25C1C url("../img/home/basmaty-pattern2.png") no-repeat center bottom;
   /*??*/
   background-size: 100%, contain;
   border-top: 5px solid #F4AC29;
-  box-shadow: inset 0px 4px 10px #0000001a;
   color: #f3f3f3;
   padding-top: 32px;
   padding-bottom: 32px; }
@@ -266,9 +273,8 @@ html {
       margin-left: 64px; } }
   .c-footer__quick-links .c-footer__logo a {
     display: inline-block;
-    background: url(../../img/home/logo-white.png) no-repeat;
-    background-size: 100px 100px;
-    height: 40px; }
+    background-size: 100% 100%;
+    width: 180px; }
 
 .c-footer__social-links {
   margin-bottom: 64px;
@@ -334,8 +340,7 @@ html {
   font-size: 20px; }
 
 .c-links {
-  padding-top: 32px;
-  padding-bottom: 32px; }
+  padding-left: 16px; }
   .c-links li {
     margin-bottom: 4px; }
   .c-links a {
@@ -344,9 +349,6 @@ html {
     transition: all 0.2s; }
     .c-links a:hover {
       color: #E25C1C; }
-
-.c-links__quick-links, .c-links__best-recipe, .c-links__classic {
-  padding-left: 16px; }
 
 .section-title {
   display: flex;
@@ -373,12 +375,6 @@ html {
   background: #eee;
   flex: 1; }
 
-.common-recipes {
-  /*??*/
-  padding-top: 32px;
-  padding-bottom: 32px;
-  background: #F9F9F8; }
-
 .c-recipe__thumb {
   width: 100%;
   margin-bottom: 1rem;
@@ -394,19 +390,41 @@ html {
     width: 100%; }
 
 .c-recipe {
-  margin-bottom: 16px; }
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  position: relative; }
 
 .c-recipe__content {
   margin-bottom: 2rem; }
 
 .c-recipe__title {
   font-size: 18px;
-  font-weight: 700; }
+  font-weight: 700;
+  order: 1; }
+  .c-recipe__title a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; }
 
 .c-recipe__description {
-  font-size: 14px; }
+  font-size: 14px;
+  order: 0; }
 
 .c-recipe__author__name {
   font-size: 14px; }
+
+.c-recipe__author {
+  order: 2;
+  z-index: 1; }
+  .c-recipe__author a {
+    display: inline-block;
+    width: 100%;
+    /*??*/ }
+    .c-recipe__author a:hover {
+      color: #E25C1C; }
 
 /*# sourceMappingURL=app.css.map */
