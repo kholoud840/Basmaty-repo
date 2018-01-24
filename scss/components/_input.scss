@@ -1,0 +1,33 @@
+.c-input {
+  @include basefont-regular;
+  flex: 1;
+  display: block;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border: 0.5px solid #ccc;
+  line-height: 26px;
+  font-size: $unit;
+  padding: $unit-small;
+
+  @include mq($from: tablet) {
+    padding-right: 35px;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.c-input--search {
+  background: #fff;
+  @include mq($from: tablet) {
+    background: #fff url(../img/home/Shape.svg) no-repeat center right 10px;
+  }
+}
+
+.c-input--subscription {
+  background: #fff;
+  @include mq($from: tablet) {
+    background: #fff url(../img/svg/mail.svg) no-repeat center right 10px;
+  }
+}

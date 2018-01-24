@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="scss/app.css">
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/app.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Cairo:400,700" rel="stylesheet">
 </head>
 <body>
 <svg style="display: none;">
@@ -112,46 +111,171 @@
 
     </div>
 </header>
-<br>
-<br>
-<br>
 <main class="site-content" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
     <section>
         <div class="container">
 
         </div>
     </section>
-
-    <section class="c-section c-section--light">
+    <section class="c-section c-section--pattern">
         <div class="container">
-            <h2 class="section-title"><span>وصفات     <strong>شائعة</strong>     </span></h2>
-            <div class="o-layout--3">
-                <article class="c-recipe">
-                    <div class="c-recipe__thumb">
-                        <img src="img/7feab0fd6a8c95f1cc3068536610678e.jpg" alt="">
-                    </div>
+            <h2 class="section-title"><span>ابحث عن     <strong>وصفه</strong>     </span></h2>
+            <div class="o-layout--small">
+                <div class="c-form--small">
 
-                    <h3 class="c-recipe__title"><a href="#">طريقة عمل القريدس </a></h3>
-                    <p class="c-recipe__description">سهل وسريع</p>
-                    <div class="c-recipe__rating">
+                    <form action="#">
+                        <p>
+                            <label for="search">search</label><!--AR/EN-->
+                            <input class="c-input c-input--search" type="search" id="search" name="search"
+                                   placeholder="مثال: طريقة عمل الهريسه..">
+                            <button class="searchButton" type=""><span>اظهار النتائج</span></button>
 
-                    </div>
-                    <div class="c-recipe__author">
-                        <a href="#">
-                              <span class="c-recipe__author__icon">
-                        </span>
-
-                            <span class="c-recipe__author__name">فريق بسمتي </span>
-                        </a>
-
-                    </div>
-                </article>
+                        </p>
+                    </form>
+                </div>
+                <ul class="c-tags">
+                    <li class="c-tag"><a href="#">فطور</a></li>
+                    <li class="c-tag"><a href="#">سلطات</a></li>
+                    <li class="c-tag"><a href="#">طبق رئيسي</a></li>
+                    <li class="c-tag"><a href="#">سندويتشات</a></li>
+                    <li class="c-tag"><a href="#">حلويات</a></li>
+                    <li class="c-tag"><a href="#">سمك</a></li>
+                    <li class="c-tag"><a href="#">معكرونه</a></li>
+                    <li class="c-tag"><a href="#">خضراوات</a></li>
+                    <li class="c-tag"><a href="#">فواكه</a></li>
+                </ul>
             </div>
         </div>
     </section>
     <section class="c-section">
         <div class="container">
-            <div class="o-layout--3">
+            <h2 class="section-title section-title--lines"><span>وصفات     <strong>شائعة</strong>     </span></h2>
+            <div class="o-layout o-layout--3">
+                <article class="c-recipe" itemscope itemtype="http://schema.org/Recipe">
+                    <div class="c-recipe__thumb">
+                        <img itemprop="image" src="http://via.placeholder.com/750x550" alt="">
+                    </div>
+
+                    <h3 class="c-recipe__title" itemprop="name"><a href="#">طريقة عمل القريدس </a></h3>
+                    <p class="c-recipe__description">سهل وسريع</p>
+                    <div class="c-recipe__rating">
+                    </div>
+                    <div class="c-recipe__author">
+                        <a href="#">
+                              <span class="c-recipe__author__icon">
+                                    <img src="img/basmaty-user@2x-100.jpg" alt="">
+                              </span>
+                            <span class="c-recipe__author__name" itemprop="author">فريق بسمتي </span>
+                        </a>
+                    </div>
+                </article>
+                <article class="c-recipe" itemscope itemtype="http://schema.org/Recipe">
+                    <div class="c-recipe__thumb">
+                        <img itemprop="image" src="http://via.placeholder.com/750x550" alt="">
+                    </div>
+
+                    <h3 class="c-recipe__title" itemprop="name"><a href="#">طريقة عمل القريدس </a></h3>
+                    <p class="c-recipe__description">سهل وسريع</p>
+                    <div class="c-recipe__rating">
+                    </div>
+                    <div class="c-recipe__author">
+                        <a href="#">
+                              <span class="c-recipe__author__icon">
+                                    <img src="img/basmaty-user@2x-100.jpg" alt="">
+                              </span>
+                            <span class="c-recipe__author__name" itemprop="author">فريق بسمتي </span>
+                        </a>
+                    </div>
+                </article>
+                <article class="c-recipe" itemscope itemtype="http://schema.org/Recipe">
+                    <div class="c-recipe__thumb">
+                        <img itemprop="image" src="http://via.placeholder.com/750x550" alt="">
+                    </div>
+
+                    <h3 class="c-recipe__title" itemprop="name"><a href="#">طريقة عمل القريدس </a></h3>
+                    <p class="c-recipe__description">سهل وسريع</p>
+                    <div class="c-recipe__rating">
+                    </div>
+                    <div class="c-recipe__author">
+                        <a href="#">
+                              <span class="c-recipe__author__icon">
+                                    <img src="img/basmaty-user@2x-100.jpg" alt="">
+                              </span>
+                            <span class="c-recipe__author__name" itemprop="author">فريق بسمتي </span>
+                        </a>
+                    </div>
+                </article>
+                <article class="c-recipe" itemscope itemtype="http://schema.org/Recipe">
+                    <div class="c-recipe__thumb">
+                        <img itemprop="image" src="http://via.placeholder.com/750x550" alt="">
+                    </div>
+
+                    <h3 class="c-recipe__title" itemprop="name"><a href="#">طريقة عمل القريدس </a></h3>
+                    <p class="c-recipe__description">سهل وسريع</p>
+                    <div class="c-recipe__rating">
+                    </div>
+                    <div class="c-recipe__author">
+                        <a href="#">
+                              <span class="c-recipe__author__icon">
+                                    <img src="img/basmaty-user@2x-100.jpg" alt="">
+                              </span>
+                            <span class="c-recipe__author__name" itemprop="author">فريق بسمتي </span>
+                        </a>
+                    </div>
+                </article>
+                <article class="c-recipe" itemscope itemtype="http://schema.org/Recipe">
+                    <div class="c-recipe__thumb">
+                        <img itemprop="image" src="http://via.placeholder.com/750x550" alt="">
+                    </div>
+
+                    <h3 class="c-recipe__title" itemprop="name"><a href="#">طريقة عمل القريدس </a></h3>
+                    <p class="c-recipe__description">سهل وسريع</p>
+                    <div class="c-recipe__rating">
+                    </div>
+                    <div class="c-recipe__author">
+                        <a href="#">
+                              <span class="c-recipe__author__icon">
+                                    <img src="img/basmaty-user@2x-100.jpg" alt="">
+                              </span>
+                            <span class="c-recipe__author__name" itemprop="author">فريق بسمتي </span>
+                        </a>
+                    </div>
+                </article>
+                <article class="c-recipe" itemscope itemtype="http://schema.org/Recipe">
+                    <div class="c-recipe__thumb">
+                        <img itemprop="image" src="http://via.placeholder.com/750x550" alt="">
+                    </div>
+
+                    <h3 class="c-recipe__title" itemprop="name"><a href="#">طريقة عمل القريدس </a></h3>
+                    <p class="c-recipe__description">سهل وسريع</p>
+                    <div class="c-recipe__rating">
+                    </div>
+                    <div class="c-recipe__author">
+                        <a href="#">
+                              <span class="c-recipe__author__icon">
+                                    <img src="img/basmaty-user@2x-100.jpg" alt="">
+                              </span>
+                            <span class="c-recipe__author__name" itemprop="author">فريق بسمتي </span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section class="c-section c-section--light">
+        <div class="container">
+            <h2 class="section-title section-title--lines"><span>احدث     <strong>الوصفات</strong>     </span></h2>
+            <div class="o-layout o-layout--4">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+            </div>
+        </div>
+    </section>
+    <section class="c-section">
+        <div class="container">
+            <div class="o-layout o-layout--3">
                 <div class="c-links">
                     <h2 class="c-links__title">روابط سريعه</h2>
                     <ul>
@@ -189,11 +313,31 @@
             </div>
         </div>
     </section>
+    <section class="c-section c-section--pattern c-section--tint">
+        <div class="container">
+            <h2 class="section-title"><span> اشترك للحصول على    <strong>اخر الوصفات</strong>     </span></h2>
+            <div class="o-layout--small">
+                <div class="c-form--small">
+
+                    <form action="#">
+                        <p>
+                            <label for="email">email</label><!--AR/EN-->
+                            <input class="c-input c-input--subscription" type="email" id="email" name="email"
+                                   placeholder="بريدك الالكتروني">
+                            <button class="searchButton" type="submit"><span>اشتراك</span></button>
+
+                        </p>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
 </main>
 
 <footer class="c-footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
     <div class="container">
-        <div class="o-layout--3">
+        <div class="o -layout o-layout--3">
             <div class="c-footer__quick-links">
                 <h2 class="c-footer__logo"><a href="#">
                     <img src="img/home/logo-white.png" alt="logo">

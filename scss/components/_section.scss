@@ -1,8 +1,19 @@
-.c-section{
+.c-section {
   padding-top: $unit-large;
   padding-bottom: $unit-large;
 }
 
-.c-section--light{
+.c-section--light {
   background: #F9F9F8;
+}
+
+.c-section--pattern {
+  background: url("../img/home/hero-pattern.png") no-repeat center center,
+  url(../img/home/basmaty-pattern2.png) no-repeat center bottom;
+  background-size: 100%, 100%, 100%;
+  padding-bottom: 70px;
+}
+
+.c-section--tint {
+
 }
