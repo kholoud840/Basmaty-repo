@@ -1,0 +1,38 @@
+svg {
+  width: 26px;
+  height: 26px;
+  fill: $color-brand-primary;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.c-icon{
+  display: inline-block;
+  vertical-align: middle;
+
+}
+.c-icon--large{
+  width: 36px;
+  height: 36px;
+}
+.c-icon--small{
+  width: 26px;
+  height: 26px;
+}
+.c-icon--login{
+  fill: $color-brand-secondary;
+}
+.c-icon--menu{
+  fill:$color-brand-primary
+}
+.c-icon--circle{
+  //background: ;
+}
+
+.c-section--newsletter__icon{
+  text-align: center;
+  span{
+    display: inline-block;
+    width:98px;
+  }
+}

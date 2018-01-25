@@ -9,8 +9,12 @@
   font-size: $unit;
   padding: $unit-small;
 
+    border-left: none;
+
+
+
   @include mq($from: tablet) {
-    padding-right: 35px;
+    padding-right: 45px;
   }
 
   &:focus {
@@ -20,6 +24,7 @@
 
 .c-input--search {
   background: #fff;
+  border-bottom: 2px solid #e9ab46;
   @include mq($from: tablet) {
     background: #fff url(../img/home/Shape.svg) no-repeat center right 10px;
   }

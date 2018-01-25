@@ -1,39 +1,30 @@
 .c-header {
   box-shadow: 0 0 4px #00000047;
   position: relative;
-  background-image: linear-gradient(to right, $color-brand-secondary, $color-brand-primary);
-  background-size: 100% 4px;
-  background-repeat: no-repeat;
-  background-position: top center;
-  svg {
-    width: 26px;
-    height: 26px;
-    fill: $color-brand-primary;
-    display: inline-block;
-    vertical-align: middle;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(to right, $color-brand-secondary, $color-brand-primary);
   }
 
   .toggle {
     border: none;
     background: transparent;
-  }
-
-  .toggle {
-    @include mq($from: tablet) {
+    @media (min-width: 990px) {
       display: none;
     }
   }
 
   .container {
-    width: 1180px;
+    width: 1280px;
   }
-}
-
-
-.c-header__item {
-  border-bottom: 1px solid #ccc;
-  display: flex;
-  justify-content: space-around;
 }
 
 .c-header {
@@ -46,19 +37,20 @@
 }
 
 .c-header__social-links {
-  display: none
-}
+  display: none;
 
-.c-header__social-links {
-  @include mq($from: tablet) {
+  @media (min-width: 990px) {
     display: block;
   }
 }
 
-
 .c-header__menu.open {
-
-  @media (max-width: 740px){
+  //animation
+  //height:0;
+  //transition: height 0.3s ease-in-out;
+  //height: auto;
+  @media (max-width: 740px) {
+    height: auto;
     display: block;
     background: $color-white;
     box-shadow: 0 0 4px #00000047;
@@ -67,13 +59,13 @@
     left: 0;
     top: 100%;
     z-index: 1;
+
     .header__menu__item {
       border-bottom: 1px solid #eee;
       a {
         display: inline-block;
         padding: $unit-small $unit;
         width: 100%;
-        //padding: $unit;
       }
 
       a.active {
@@ -86,13 +78,20 @@
 
 .c-header__menu {
   display: none;
-  @include mq($from: tablet) {
+
+  @media (min-width: 990px) {
     display: block;
     order: 1;
 
     .header__menu__item {
       display: inline-block;
-      padding-right: $unit-large;
+      padding-right: 28px;
+
+      a {
+        display: inline-block;
+        padding-top: 22px;
+        padding-bottom: 22px;
+      }
     }
 
     a.active {
@@ -102,15 +101,27 @@
   }
 }
 
-
 .c-header__logo {
-  @include mq($from: tablet) {
-    order: 0;
+
+  a {
+    //display: inline-block;
+    width: 140px;
+    display: flex;
+    align-items: center;
+    padding: 22px;
   }
+  @media (min-width: 990px) {
+    order: 0;
+    border-left: 1px solid #eee;
+  }
+
 }
 
 .c-header__social-links {
   @include mq($from: tablet) {
+
+  }
+  @media (min-width: 990px) {
     order: 2;
     margin-right: auto;
   }
@@ -121,7 +132,16 @@
     display: none;
   }
   @include mq($from: tablet) {
+
+  }
+  @media (min-width: 990px) {
+    border-right: 1px solid #eee;
+    margin-right: $unit;
     order: 3;
+    a {
+      display: inline-block;
+      padding: 22px;
+    }
     span {
       display: inline-block;
     }
@@ -129,12 +149,5 @@
 
 }
 
-.c-header__logo {
-  a {
-    display: inline-block;
-    width: 150px;
-    padding-top: 20px ;
-    padding-bottom: 20px;
-  }
-}
+
 

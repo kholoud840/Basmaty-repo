@@ -13,7 +13,7 @@
     <defs>
         <g>
             <path id="icon-menu"
-                  d="M2 13.5h49c1.104 0 2-.896 2-2s-.896-2-2-2H2c-1.104 0-2 .896-2 2s.896 2 2 2zM2 28.5h49c1.104 0 2-.896 2-2s-.896-2-2-2H2c-1.104 0-2 .896-2 2s.896 2 2 2zM2 43.5h49c1.104 0 2-.896 2-2s-.896-2-2-2H2c-1.104 0-2 .896-2 2s.896 2 2 2z"/>
+                  d="M491.318 235.318H20.682C9.26 235.318 0 244.577 0 256s9.26 20.682 20.682 20.682h470.636c11.423 0 20.682-9.259 20.682-20.682 0-11.422-9.259-20.682-20.682-20.682zM491.318 78.439H20.682C9.26 78.439 0 87.699 0 99.121c0 11.422 9.26 20.682 20.682 20.682h470.636c11.423 0 20.682-9.26 20.682-20.682 0-11.422-9.259-20.682-20.682-20.682zM491.318 392.197H20.682C9.26 392.197 0 401.456 0 412.879s9.26 20.682 20.682 20.682h470.636c11.423 0 20.682-9.259 20.682-20.682s-9.259-20.682-20.682-20.682z"/>
         </g>
     </defs>
 
@@ -76,9 +76,8 @@
 
 <header class="c-header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
     <div class="container">
-        <!--<div class="c-header__item"> -->
         <button class="toggle">
-            <svg width="50px" height="40px">
+            <svg class="c-icon c-icon--menu" width="26px" height="26px" viewBox="0 0 512 512">
                 <use xmlns="http://www.w3.org/2000/svg" xlink:href="#icon-menu"></use>
             </svg>
         </button>
@@ -96,40 +95,36 @@
 
         </div>
         <div class="c-header__logo"><h1 itemprop="headline"><a href="#">
-            <img src="img/home/logo.png" alt="brand logo">
+            <img src="img/home/logo.png" alt="logo">
         </a></h1></div>
-        <div class="c-header__social-links">تابع بسمتي</div>
-        <div class="c-header__user-actions">
-            <svg width="32" height="32" viewBox="0 0 299.997 299.997">
-                <use xmlns="http://www.w3.org/2000/svg" xlink:href="#icon-user"></use>
-            </svg>
-            <span>تسجيل الدخول</span>
+        <div class="c-header__social-links">
+            <span>تابع بسمتي</span>
+            <ul class="c-header__social-media">
+            </ul>
         </div>
-
-        <!--</div> -->
-
-
+        <div class="c-header__user-actions">
+            <a href="#">
+                <svg class="c-icon c-icon--login" width="32" height="32" viewBox="0 0 299.997 299.997">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="#icon-user"></use>
+                </svg>
+                <span>تسجيل الدخول</span>
+            </a>
+        </div>
     </div>
 </header>
 <main class="site-content" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
-    <section>
-        <div class="container">
 
-        </div>
-    </section>
-    <section class="c-section c-section--pattern">
+    <section class="c-section c-section--hero">
         <div class="container">
-            <h2 class="section-title"><span>ابحث عن     <strong>وصفه</strong>     </span></h2>
+            <h2 class="c-section-title"><span>ابحث عن  <strong>وصفه</strong></span></h2>
             <div class="o-layout--small">
                 <div class="c-form--small">
-
                     <form action="#">
                         <p>
                             <label for="search">search</label><!--AR/EN-->
                             <input class="c-input c-input--search" type="search" id="search" name="search"
                                    placeholder="مثال: طريقة عمل الهريسه..">
                             <button class="searchButton" type=""><span>اظهار النتائج</span></button>
-
                         </p>
                     </form>
                 </div>
@@ -149,7 +144,7 @@
     </section>
     <section class="c-section">
         <div class="container">
-            <h2 class="section-title section-title--lines"><span>وصفات     <strong>شائعة</strong>     </span></h2>
+            <h2 class="c-section-title section-title--lines"><span>وصفات     <strong>شائعة</strong>     </span></h2>
             <div class="o-layout o-layout--3">
                 <article class="c-recipe" itemscope itemtype="http://schema.org/Recipe">
                     <div class="c-recipe__thumb">
@@ -264,7 +259,7 @@
     </section>
     <section class="c-section c-section--light">
         <div class="container">
-            <h2 class="section-title section-title--lines"><span>احدث     <strong>الوصفات</strong>     </span></h2>
+            <h2 class="c-section-title section-title--lines"><span>احدث  <strong>الوصفات</strong>  </span></h2>
             <div class="o-layout o-layout--4">
                 <div>1</div>
                 <div>2</div>
@@ -313,12 +308,16 @@
             </div>
         </div>
     </section>
-    <section class="c-section c-section--pattern c-section--tint">
+    <section class="c-section c-section--newsletter">
         <div class="container">
-            <h2 class="section-title"><span> اشترك للحصول على    <strong>اخر الوصفات</strong>     </span></h2>
+            <div class="c-section--newsletter__icon">
+                <span>
+                    <img src="img/home/newsletter-2@4x-8.png" alt="newsletter icon">
+                </span>
+            </div>
+            <h2 class="c-section-title"><span> اشترك للحصول على <strong>اخر الوصفات</strong></span></h2>
             <div class="o-layout--small">
                 <div class="c-form--small">
-
                     <form action="#">
                         <p>
                             <label for="email">email</label><!--AR/EN-->
@@ -383,23 +382,12 @@
                 </ul>
                 <h3 class="c-footer__title"> تطبيق بسمتي</h3>
                 <ul class="c-footer__app-links">
-                    <li><a href="#">ando</a></li>
-                    <li><a href="#">ios</a></li>
-
-
-                    <!--  <div class="c-footer__app-kinks--android">
-                          <div class="android--icon">
-                              <svg width="438.529" height="438.529" viewBox="0 0 438.529 438.529">
-                                  <use xmlns="http://www.w3.org/2000/svg" xlink:href="#icon-pintrest"></use>
-                              </svg>
-                          </div>
-                          <div>
-                              <h4>متوفر على</h4>
-                              <h4>Google Play</h4>
-                          </div>
-                      </div> -->
-
-
+                    <li><a href="#">
+                        <img src="img/app-store.png" alt="">
+                    </a></li>
+                    <li><a href="#">
+                        <img src="img/app-store.png" alt="">
+                    </a></li>
                 </ul>
             </div>
             <div class="c-footer__site-map">
@@ -415,7 +403,6 @@
                 </ul>
             </div>
         </div>
-
     </div>
 </footer>
 </body>

@@ -172,37 +172,42 @@ html {
 .c-section--light {
   background: #F9F9F8; }
 
-.c-section--pattern {
-  background: url("../img/home/hero-pattern.png") no-repeat center center, url(../img/home/basmaty-pattern2.png) no-repeat center bottom;
-  background-size: 100%, 100%, 100%;
+.c-section--hero {
+  box-shadow: 0 4px 11px #e7e7e7;
+  background: url(../img/home/basmaty-pattern2.png) no-repeat center bottom, linear-gradient(transparent, #F9F9F9 99%) no-repeat, url(../img/home/hero-pattern.png) no-repeat center center, #F9F9F9;
+  background-size: 100%, 100% 200px, cover;
+  background-position: bottom,bottom, center;
   padding-bottom: 70px; }
+  .c-section--hero h2 {
+    font-size: 32px; }
+
+.c-section--newsletter {
+  background: url(../img/home/newsletter-pattern.png) no-repeat center bottom, linear-gradient(transparent, #FDFAF3 99%) no-repeat, #FDFAF3;
+  background-size: cover;
+  background-position: center;
+  border-top: 3px solid #F4AC29; }
 
 .c-header {
   box-shadow: 0 0 4px #00000047;
-  position: relative;
-  background-image: linear-gradient(to right, #F4AC29, #E25C1C);
-  background-size: 100% 4px;
-  background-repeat: no-repeat;
-  background-position: top center; }
-  .c-header svg {
-    width: 26px;
-    height: 26px;
-    fill: #E25C1C;
-    display: inline-block;
-    vertical-align: middle; }
+  position: relative; }
+  .c-header::after {
+    content: '';
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(to right, #F4AC29, #E25C1C); }
   .c-header .toggle {
     border: none;
     background: transparent; }
-  @media (min-width: 46.25em) {
-    .c-header .toggle {
-      display: none; } }
+    @media (min-width: 990px) {
+      .c-header .toggle {
+        display: none; } }
   .c-header .container {
-    width: 1180px; }
-
-.c-header__item {
-  border-bottom: 1px solid #ccc;
-  display: flex;
-  justify-content: space-around; }
+    width: 1280px; }
 
 .c-header .container {
   display: flex;
@@ -212,13 +217,13 @@ html {
 
 .c-header__social-links {
   display: none; }
-
-@media (min-width: 46.25em) {
-  .c-header__social-links {
-    display: block; } }
+  @media (min-width: 990px) {
+    .c-header__social-links {
+      display: block; } }
 
 @media (max-width: 740px) {
   .c-header__menu.open {
+    height: auto;
     display: block;
     background: #f3f3f3;
     box-shadow: 0 0 4px #00000047;
@@ -238,48 +243,56 @@ html {
 
 .c-header__menu {
   display: none; }
-  @media (min-width: 46.25em) {
+  @media (min-width: 990px) {
     .c-header__menu {
       display: block;
       order: 1; }
       .c-header__menu .header__menu__item {
         display: inline-block;
-        padding-right: 32px; }
+        padding-right: 28px; }
+        .c-header__menu .header__menu__item a {
+          display: inline-block;
+          padding-top: 22px;
+          padding-bottom: 22px; }
       .c-header__menu a.active {
         color: #E25C1C;
         font-weight: 700; } }
 
-@media (min-width: 46.25em) {
+.c-header__logo a {
+  width: 140px;
+  display: flex;
+  align-items: center;
+  padding: 22px; }
+@media (min-width: 990px) {
   .c-header__logo {
-    order: 0; } }
+    order: 0;
+    border-left: 1px solid #eee; } }
 
-@media (min-width: 46.25em) {
+@media (min-width: 990px) {
   .c-header__social-links {
     order: 2;
     margin-right: auto; } }
 
 .c-header__user-actions span {
   display: none; }
-@media (min-width: 46.25em) {
+@media (min-width: 990px) {
   .c-header__user-actions {
+    border-right: 1px solid #eee;
+    margin-right: 16px;
     order: 3; }
+    .c-header__user-actions a {
+      display: inline-block;
+      padding: 22px; }
     .c-header__user-actions span {
       display: inline-block; } }
 
-.c-header__logo a {
-  display: inline-block;
-  width: 150px;
-  padding-top: 20px;
-  padding-bottom: 20px; }
-
 .c-footer {
-  background: #E25C1C url("../img/home/basmaty-pattern2.png") no-repeat center bottom;
-  /*??*/
   background-size: 100%, contain;
   border-top: 5px solid #F4AC29;
   color: #f3f3f3;
   padding-top: 32px;
-  padding-bottom: 32px; }
+  padding-bottom: 64px;
+  background: #E25C1C url(../img/home/basmaty-pattern2.png) no-repeat center bottom; }
 
 .c-footer__quick-links {
   margin-bottom: 64px;
@@ -287,10 +300,12 @@ html {
   @media (min-width: 46.25em) {
     .c-footer__quick-links {
       margin-left: 64px; } }
-  .c-footer__quick-links .c-footer__logo a {
-    display: inline-block;
-    background-size: 100% 100%;
-    width: 180px; }
+  .c-footer__quick-links .c-footer__logo {
+    margin-bottom: 32px; }
+    .c-footer__quick-links .c-footer__logo a {
+      display: inline-block;
+      background-size: 100% 100%;
+      width: 195px; }
 
 .c-footer__social-links {
   margin-bottom: 64px;
@@ -313,18 +328,10 @@ html {
       fill: #f2e3b9; }
 
 .c-footer__app-links li {
-  display: inline-block;
-  margin-bottom: 16px; }
-  @media (min-width: 61.25em) {
-    .c-footer__app-links li {
-      margin-right: 16px; } }
+  display: inline-block; }
 .c-footer__app-links a {
   display: inline-block;
-  padding: 16px;
-  height: 63px;
-  width: 158px;
-  border: 2px solid rgba(255, 255, 255, 0.5);
-  border-radius: 7px; }
+  width: 120px; }
 
 .c-footer__site-map li {
   margin-bottom: 4px; }
@@ -348,6 +355,9 @@ html {
     width: 20px;
     height: 20px; }
 
+.c-footer__social-media {
+  margin-bottom: 32px; }
+
 .c-input {
   font-family: "sstarabicroman-regular";
   flex: 1;
@@ -357,15 +367,17 @@ html {
   border: 0.5px solid #ccc;
   line-height: 26px;
   font-size: 16px;
-  padding: 8px; }
+  padding: 8px;
+  border-left: none; }
   @media (min-width: 46.25em) {
     .c-input {
-      padding-right: 35px; } }
+      padding-right: 45px; } }
   .c-input:focus {
     outline: none; }
 
 .c-input--search {
-  background: #fff; }
+  background: #fff;
+  border-bottom: 2px solid #e9ab46; }
   @media (min-width: 46.25em) {
     .c-input--search {
       background: #fff url(../img/home/Shape.svg) no-repeat center right 10px; } }
@@ -386,9 +398,6 @@ html {
     max-width: 100%; }
   .c-form--small form p {
     display: flex; }
-  .c-form--small input {
-    border-left: none;
-    border-bottom: 2px solid #e9ab46; }
   .c-form--small form button {
     font-family: "sstarabicroman-regular";
     color: #fff;
@@ -407,43 +416,6 @@ html {
         padding: 10px 16px 14px 16px; }
         .c-form--small form button span {
           display: block; } }
-
-.c-search {
-  margin-bottom: 32px; }
-  .c-search label {
-    display: none; }
-  .c-search form {
-    width: 100%;
-    position: relative;
-    max-width: 100%; }
-  .c-search form p {
-    display: flex; }
-  .c-search input {
-    font-family: "sstarabicroman-regular";
-    flex: 1;
-    display: block;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border: 0.5px solid #ccc;
-    border-bottom: 2px solid #e9ab46;
-    border-left: none;
-    line-height: 26px;
-    background: #fff url(../img/home/Shape.svg) no-repeat center right 10px;
-    font-size: 16px;
-    padding: 8px;
-    padding-right: 35px; }
-    .c-search input:focus {
-      outline: none; }
-  .c-search form button {
-    font-family: "sstarabicroman-regular";
-    color: #fff;
-    background: #e05d2a;
-    border: none;
-    padding: 16px;
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
-    font-size: 16px;
-    padding: 8px 16px; }
 
 .c-tags {
   text-align: center; }
@@ -466,6 +438,37 @@ html {
       color: #E25C1C;
       border-color: #E25C1C; }
 
+svg {
+  width: 26px;
+  height: 26px;
+  fill: #E25C1C;
+  display: inline-block;
+  vertical-align: middle; }
+
+.c-icon {
+  display: inline-block;
+  vertical-align: middle; }
+
+.c-icon--large {
+  width: 36px;
+  height: 36px; }
+
+.c-icon--small {
+  width: 26px;
+  height: 26px; }
+
+.c-icon--login {
+  fill: #F4AC29; }
+
+.c-icon--menu {
+  fill: #E25C1C; }
+
+.c-section--newsletter__icon {
+  text-align: center; }
+  .c-section--newsletter__icon span {
+    display: inline-block;
+    width: 98px; }
+
 .c-links__title {
   padding-bottom: 8px;
   margin-bottom: 16px;
@@ -484,16 +487,17 @@ html {
     .c-links a:hover {
       color: #E25C1C; }
 
-.section-title {
+.c-section-title {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 24px;
-  margin-bottom: 26px; }
-  .section-title span {
+  margin-bottom: 26px;
+  text-align: center; }
+  .c-section-title span {
     padding-left: 16px;
     padding-right: 16px; }
-  .section-title strong {
+  .c-section-title strong {
     font-weight: 700;
     color: #E25C1C; }
 
