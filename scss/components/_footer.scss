@@ -1,34 +1,40 @@
 .c-footer {
   background-size: 100%, contain;
-  border-top: 5px solid $color-brand-secondary;
+  border-top: $unit-small solid $color-brand-secondary;
   color: $color-white;
   padding-top: $unit-large;
   padding-bottom: $unit-huge;
-  background:  $color-brand-primary url(../img/home/basmaty-pattern2.png) no-repeat center bottom;
+  background: $color-brand-primary url(../img/home/footer-pattern.png) no-repeat center bottom;
+  background-size: 100% 55px;
 }
 
 .c-footer__quick-links {
-  margin-bottom: $unit-huge;
-  margin-left: $unit-large;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.08);
+  padding-bottom: $unit-large;
   @include mq($from: tablet) {
     margin-left: $unit-huge;
+    padding-bottom: 0;
+    border-bottom: 0;
   }
   .c-footer__logo {
-    margin-bottom: $unit-large;
+    @include mq($from: tablet) {
+      margin-bottom: $unit-large;
+    }
     a {
       display: inline-block;
       background-size: 100% 100%;
       width: 195px;
     }
   }
-
 }
 
 .c-footer__social-links {
-  margin-bottom: $unit-huge;
-  margin-left: $unit-large;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.08);
+  padding-bottom: $unit-large;
   @include mq($from: tablet) {
     margin-left: $unit-huge;
+    padding-bottom: 0;
+    border-bottom: 0;
   }
 
 }
@@ -55,10 +61,6 @@
 .c-footer__app-links {
   li {
     display: inline-block;
-    @include mq($from: desktop) {
-      // margin-right: $unit;
-    }
-
   }
   a {
     display: inline-block;
@@ -82,9 +84,13 @@
 
 .c-footer__title {
   padding-bottom: $unit-small;
-  border-bottom: 1px solid #00000012;
   margin-bottom: $unit;
   font-weight: 700;
+
+  @include mq($from: tablet) {
+    border-bottom: 1px solid #00000012;
+  }
+
 }
 
 .c-footer__app-kinks--android {
@@ -98,6 +104,6 @@
   }
 }
 
-.c-footer__social-media{
+.c-footer__social-media {
   margin-bottom: $unit-large;
 }

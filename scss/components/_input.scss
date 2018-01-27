@@ -8,10 +8,9 @@
   line-height: 26px;
   font-size: $unit;
   padding: $unit-small;
-
-    border-left: none;
-
-
+  border-left: none;
+  position: relative;
+  transition: 0.4s;
 
   @include mq($from: tablet) {
     padding-right: 45px;
@@ -19,20 +18,27 @@
 
   &:focus {
     outline: none;
+    border:1px solid $color-brand-secondary;
+    background: #f8f5eb;
   }
 }
+
 
 .c-input--search {
   background: #fff;
   border-bottom: 2px solid #e9ab46;
+  transition: 0.4s;
   @include mq($from: tablet) {
     background: #fff url(../img/home/Shape.svg) no-repeat center right 10px;
   }
 }
+
+
 
 .c-input--subscription {
   background: #fff;
   @include mq($from: tablet) {
     background: #fff url(../img/svg/mail.svg) no-repeat center right 10px;
   }
+
 }

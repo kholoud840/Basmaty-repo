@@ -7,23 +7,24 @@
   background: #F9F9F8;
 }
 
-.c-section--hero{
+.c-section--hero {
   box-shadow: 0 4px 11px #e7e7e7;
   background: url(../img/home/basmaty-pattern2.png) no-repeat center bottom,
   linear-gradient(transparent, #F9F9F9 99%) no-repeat,
   url(../img/home/hero-pattern.png) no-repeat center center, #F9F9F9;
   background-size: 100%, 100% 200px, cover;
-  background-position: bottom,bottom, center;
+  background-position: bottom, bottom, center;
   padding-bottom: 70px;
-h2{
+  h2 {
     font-size: $unit-large;
   }
 
 }
-.c-section--newsletter{
+
+.c-section--newsletter {
   background: url(../img/home/newsletter-pattern.png) no-repeat center bottom,
   linear-gradient(transparent, #FDFAF3 99%) no-repeat, #FDFAF3;
-  background-size:  cover;
-  background-position:  center;
+  background-size: cover;
+  background-position: center;
   border-top: 3px solid $color-brand-secondary;
 }

@@ -17,8 +17,8 @@
     text-transform: capitalize;
     transition: all .3s ease;
     &:hover {
-      color: $color-brand-primary;
-      border-color: $color-brand-primary;
+      color: $color-brand-secondary;
+      border-color: $color-brand-secondary;
     }
   }
 }

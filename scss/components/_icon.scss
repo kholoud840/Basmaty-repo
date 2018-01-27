@@ -1,38 +1,59 @@
 svg {
   width: 26px;
   height: 26px;
-  fill: $color-brand-primary;
   display: inline-block;
   vertical-align: middle;
 }
 
-.c-icon{
+.c-icon {
   display: inline-block;
   vertical-align: middle;
 
 }
-.c-icon--large{
+
+.c-icon--large {
   width: 36px;
   height: 36px;
 }
-.c-icon--small{
-  width: 26px;
-  height: 26px;
-}
-.c-icon--login{
+
+.c-icon--login {
   fill: $color-brand-secondary;
 }
-.c-icon--menu{
-  fill:$color-brand-primary
-}
-.c-icon--circle{
-  //background: ;
+
+.c-icon--menu {
+  fill: $color-brand-primary
 }
 
-.c-section--newsletter__icon{
+.c-icon--circle {
+  background: #f8f5eb;
+  width: 26px;
+  height: 26px;
   text-align: center;
-  span{
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+
+}
+
+.c-icon--facebook {
+  background: #f8f5eb url("../img/svg/facebook.svg") no-repeat center center;
+  background-size: 16px;
+}
+
+.c-icon--youtube {
+  background: #f8f5eb url("../img/svg/youtube.svg") no-repeat center center;
+  background-size: 16px;
+}
+
+.c-icon--instagram {
+  background: #f8f5eb url("../img/svg/instagram.svg") no-repeat center center;
+  background-size: 16px;
+}
+
+.c-section--newsletter__icon {
+  text-align: center;
+  span {
     display: inline-block;
-    width:98px;
+    width: 98px;
   }
 }

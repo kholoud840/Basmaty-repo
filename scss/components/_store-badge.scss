@@ -1,0 +1,33 @@
+.c-store-badge {
+  display: inline-block;
+  border: 1px solid $color-white;
+  border-radius: 4px;
+  color: $color-white;
+  background: transparent;
+  min-width: 100px;
+  background-size: 30px;
+  line-height: 1;
+  padding: 8px;
+  padding-right: 38px;
+  margin-bottom: $unit;
+  @include mq($from: desktop) {
+    margin-bottom: 0;
+  }
+}
+
+.c-store-badge--ios {
+  background: url(../img/svg/apple.svg) no-repeat center right 6px;
+}
+
+.c-store-badge--android {
+  background: url(../img/svg/android-logo.svg) no-repeat center right 6px;
+}
+
+.c-store-badge__text {
+  font-size: 12px;
+  vertical-align: top;
+}
+
+.c-store-badge__storename {
+  font-size: 12px;
+}

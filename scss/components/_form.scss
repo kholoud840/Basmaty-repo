@@ -20,7 +20,8 @@
     }
     @include basefont-regular;
     color: #fff;
-    background: $color-brand-primary url(../img/home/Shape.svg) no-repeat 10px center;
+    //background: $color-brand-primary;
+    //background: $color-brand-primary url(../img/home/Shape.svg) no-repeat 10px center;
     border: none;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -35,3 +36,4 @@
     }
   }
 }
+

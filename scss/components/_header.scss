@@ -39,8 +39,15 @@
 .c-header__social-links {
   display: none;
 
-  @media (min-width: 990px) {
-    display: block;
+  @media (min-width: 1124px) {
+    display: flex;
+  }
+}
+
+.c-header__social-media {
+  li {
+    display: inline-block;
+    padding-right: 4px;
   }
 }
 
@@ -49,7 +56,7 @@
   //height:0;
   //transition: height 0.3s ease-in-out;
   //height: auto;
-  @media (max-width: 740px) {
+  @media (max-width: 990px) {
     height: auto;
     display: block;
     background: $color-white;
@@ -104,7 +111,6 @@
 .c-header__logo {
 
   a {
-    //display: inline-block;
     width: 140px;
     display: flex;
     align-items: center;

@@ -1,0 +1,21 @@
+.button-1{
+  border: 1px solid #D4D4D4;
+  border-radius: 5px;
+  background-color: rgba(255,255,255,0.43);
+}
+
+
+.c-button--search{
+  background: $color-brand-primary url(../img/home/Shape.svg) no-repeat 10px center;
+  @include mq($from: tablet) {
+    background: $color-brand-primary;
+    }
+}
+
+.c-button--email{
+  background: $color-brand-primary url(../img/svg/mail.svg) no-repeat 10px center;
+  background-size: 26px;
+  @include mq($from: tablet) {
+    background: $color-brand-primary;
+  }
+}
