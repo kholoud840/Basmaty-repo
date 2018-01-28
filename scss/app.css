@@ -398,7 +398,7 @@ html {
       padding-right: 45px; } }
   .c-input:focus {
     outline: none;
-    border: 1px solid #F4AC29;
+    border: 0.5px solid #F4AC29;
     background: #f8f5eb; }
 
 .c-input--search {
@@ -407,6 +407,8 @@ html {
   @media (min-width: 46.25em) {
     .c-input--search {
       background: #fff url(../img/home/Shape.svg) no-repeat center right 10px; } }
+  .c-input--search:focus {
+    border-bottom: 2px solid #F4AC29; }
 
 .c-input--subscription {
   background: #fff; }

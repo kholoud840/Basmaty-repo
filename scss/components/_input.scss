@@ -12,13 +12,14 @@
   position: relative;
   transition: 0.4s;
 
+
   @include mq($from: tablet) {
     padding-right: 45px;
   }
 
   &:focus {
     outline: none;
-    border:1px solid $color-brand-secondary;
+    border:0.5px solid $color-brand-secondary;
     background: #f8f5eb;
   }
 }
@@ -27,9 +28,11 @@
 .c-input--search {
   background: #fff;
   border-bottom: 2px solid #e9ab46;
-  //transition: 0.4s;
   @include mq($from: tablet) {
     background: #fff url(../img/home/Shape.svg) no-repeat center right 10px;
+  }
+  &:focus {
+    border-bottom:2px solid $color-brand-secondary;
   }
 }
 
