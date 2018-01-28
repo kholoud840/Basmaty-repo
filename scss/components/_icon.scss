@@ -18,6 +18,11 @@ svg {
 
 .c-icon--login {
   fill: $color-brand-secondary;
+  @media (max-width:980px) {
+    width: 32px;
+    height: 32px;
+  }
+
 }
 
 .c-icon--menu {

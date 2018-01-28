@@ -5,7 +5,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/app.css" afterPath="$PROJECT_DIR$/scss/app.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/app.css.map" afterPath="$PROJECT_DIR$/scss/app.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/components/_tag.scss" afterPath="$PROJECT_DIR$/scss/components/_tag.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/components/_icon.scss" afterPath="$PROJECT_DIR$/scss/components/_icon.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,7 +27,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
+            <state relative-caret-position="1100">
               <caret line="119" column="13" lean-forward="false" selection-start-line="119" selection-start-column="13" selection-end-line="119" selection-end-column="13" />
               <folding>
                 <element signature="n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -51,7 +51,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_tag.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_tag.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scss/components/_tag.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="450">
@@ -64,18 +64,28 @@
       <file leaf-file-name="_input.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scss/components/_input.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="725">
-              <caret line="29" column="4" lean-forward="false" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
+            <state relative-caret-position="439">
+              <caret line="39" column="2" lean-forward="true" selection-start-line="39" selection-start-column="2" selection-end-line="39" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_icon.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_icon.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scss/components/_icon.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1025">
-              <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+            <state relative-caret-position="531">
+              <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_mixins.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scss/utils/_mixins.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -85,7 +95,7 @@
         <entry file="file://$PROJECT_DIR$/img/svg/facebook-logo.svg">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="3" column="6" lean-forward="true" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+              <caret line="3" column="6" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -95,17 +105,7 @@
         <entry file="file://$PROJECT_DIR$/img/svg/instagram.svg">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="25">
-              <caret line="1" column="85" lean-forward="true" selection-start-line="1" selection-start-column="85" selection-end-line="1" selection-end-column="99" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_footer.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scss/components/_footer.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="875">
-              <caret line="35" column="18" lean-forward="false" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="18" />
+              <caret line="1" column="85" lean-forward="false" selection-start-line="1" selection-start-column="85" selection-end-line="1" selection-end-column="99" />
               <folding />
             </state>
           </provider>
@@ -196,9 +196,9 @@
         <option value="$PROJECT_DIR$/scss/layout/_grid.scss" />
         <option value="$PROJECT_DIR$/scss/components/_input.scss" />
         <option value="$PROJECT_DIR$/img/svg/facebook-logo.svg" />
-        <option value="$PROJECT_DIR$/scss/components/_icon.scss" />
         <option value="$PROJECT_DIR$/scss/components/_header.scss" />
         <option value="$PROJECT_DIR$/scss/components/_tag.scss" />
+        <option value="$PROJECT_DIR$/scss/components/_icon.scss" />
       </list>
     </option>
   </component>
@@ -229,7 +229,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -399,6 +398,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -545,12 +545,13 @@
       <workItem from="1517165854728" duration="154000" />
       <workItem from="1517166033878" duration="500000" />
       <workItem from="1517166563838" duration="1673000" />
-      <workItem from="1517168972612" duration="1545000" />
+      <workItem from="1517168972612" duration="1816000" />
+      <workItem from="1517170815270" duration="265000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88397000" />
+    <option name="totallyTimeSpent" value="88933000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="1" width="1918" height="989" extended-state="0" />
@@ -561,7 +562,7 @@
       <window_info id="Debug Logs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32796487" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32741117" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -862,13 +863,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scss/utils/_mixins.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scss/components/_search.scss" />
     <entry file="file://$PROJECT_DIR$/scss/components/_rating.scss">
       <provider selected="true" editor-type-id="text-editor">
@@ -929,7 +923,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
           <caret line="14" column="25" lean-forward="false" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -968,7 +961,7 @@
     <entry file="file://$PROJECT_DIR$/img/svg/instagram.svg">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
-          <caret line="1" column="85" lean-forward="true" selection-start-line="1" selection-start-column="85" selection-end-line="1" selection-end-column="99" />
+          <caret line="1" column="85" lean-forward="false" selection-start-line="1" selection-start-column="85" selection-end-line="1" selection-end-column="99" />
           <folding />
         </state>
       </provider>
@@ -976,23 +969,7 @@
     <entry file="file://$PROJECT_DIR$/img/svg/facebook-logo.svg">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="3" column="6" lean-forward="true" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/components/_input.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="725">
-          <caret line="29" column="4" lean-forward="false" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/components/_icon.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1025">
-          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <caret line="3" column="6" lean-forward="false" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
           <folding />
         </state>
       </provider>
@@ -1001,13 +978,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="398">
           <caret line="124" column="13" lean-forward="true" selection-start-line="124" selection-start-column="13" selection-end-line="124" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
+        <state relative-caret-position="1100">
           <caret line="119" column="13" lean-forward="false" selection-start-line="119" selection-start-column="13" selection-end-line="119" selection-end-column="13" />
           <folding>
             <element signature="n#svg#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -1034,6 +1010,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/components/_input.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="39" column="2" lean-forward="true" selection-start-line="39" selection-start-column="2" selection-end-line="39" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/utils/_mixins.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/components/_icon.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="531">
+          <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
           <folding />
         </state>
       </provider>

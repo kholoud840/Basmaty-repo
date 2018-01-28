@@ -492,6 +492,10 @@ svg {
 
 .c-icon--login {
   fill: #F4AC29; }
+  @media (max-width: 980px) {
+    .c-icon--login {
+      width: 32px;
+      height: 32px; } }
 
 .c-icon--menu {
   fill: #E25C1C; }
