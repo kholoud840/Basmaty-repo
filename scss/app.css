@@ -275,6 +275,7 @@ html {
 .c-header__logo a {
   width: 160px;
   display: flex;
+  -moz-display: flex;
   align-items: center;
   padding: 22px;
   padding-bottom: 12px; }
@@ -472,13 +473,16 @@ html {
   .c-tag a {
     font-size: 14px;
     display: inline-block;
-    padding: 0 22px 6px 22px;
+    padding: 0 12px 4px 12px;
     color: #676767;
     border: 1px solid #D4D4D4;
     border-radius: 4px;
     line-height: 28px;
     text-transform: capitalize;
     transition: all .3s ease; }
+    @media (min-width: 46.25em) {
+      .c-tag a {
+        padding: 0 22px 6px 22px; } }
     .c-tag a:hover {
       background: #f8f5eb;
       color: #E25C1C;
