@@ -194,7 +194,7 @@ html {
   border-top: 3px solid #F4AC29; }
 
 .c-header {
-  box-shadow: 0 0 4px #00000047;
+  box-shadow: 0 0 4px #b8b8b8;
   position: relative; }
   .c-header::after {
     content: '';
