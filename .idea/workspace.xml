@@ -5,7 +5,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/app.css" afterPath="$PROJECT_DIR$/scss/app.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/app.css.map" afterPath="$PROJECT_DIR$/scss/app.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/components/_header.scss" afterPath="$PROJECT_DIR$/scss/components/_header.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/components/_tag.scss" afterPath="$PROJECT_DIR$/scss/components/_tag.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -51,11 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_header.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scss/components/_header.scss">
+      <file leaf-file-name="_tag.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scss/components/_tag.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="124" column="13" lean-forward="true" selection-start-line="124" selection-start-column="13" selection-end-line="124" selection-end-column="13" />
+            <state relative-caret-position="450">
+              <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -162,6 +162,7 @@
       <find>after</find>
       <find>au</find>
       <find>c-header__social-links</find>
+      <find>140</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -182,7 +183,6 @@
         <option value="$PROJECT_DIR$/scss/components/_button.scss" />
         <option value="$PROJECT_DIR$/scss/components/_rating.scss" />
         <option value="$PROJECT_DIR$/img/svg/apple.svg" />
-        <option value="$PROJECT_DIR$/scss/components/_tag.scss" />
         <option value="$PROJECT_DIR$/img/svg/facebook-logo (1).svg" />
         <option value="$PROJECT_DIR$/scss/components/_recipe.scss" />
         <option value="$PROJECT_DIR$/img/svg/facebook.svg" />
@@ -198,6 +198,7 @@
         <option value="$PROJECT_DIR$/img/svg/facebook-logo.svg" />
         <option value="$PROJECT_DIR$/scss/components/_icon.scss" />
         <option value="$PROJECT_DIR$/scss/components/_header.scss" />
+        <option value="$PROJECT_DIR$/scss/components/_tag.scss" />
       </list>
     </option>
   </component>
@@ -544,15 +545,15 @@
       <workItem from="1517165854728" duration="154000" />
       <workItem from="1517166033878" duration="500000" />
       <workItem from="1517166563838" duration="1673000" />
-      <workItem from="1517168972612" duration="1014000" />
+      <workItem from="1517168972612" duration="1545000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87866000" />
+    <option name="totallyTimeSpent" value="88397000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="1" width="1918" height="989" extended-state="1" />
+    <frame x="1" y="1" width="1918" height="989" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25040302" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -907,13 +908,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scss/components/_tag.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scss/components/_form.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="950">
@@ -1003,6 +997,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scss/components/_header.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="124" column="13" lean-forward="true" selection-start-line="124" selection-start-column="13" selection-end-line="124" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
@@ -1028,10 +1030,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scss/components/_header.scss">
+    <entry file="file://$PROJECT_DIR$/scss/components/_tag.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="124" column="13" lean-forward="true" selection-start-line="124" selection-start-column="13" selection-end-line="124" selection-end-column="13" />
+        <state relative-caret-position="450">
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
           <folding />
         </state>
       </provider>

@@ -472,8 +472,9 @@ html {
     text-transform: capitalize;
     transition: all .3s ease; }
     .c-tag a:hover {
-      color: #F4AC29;
-      border-color: #F4AC29; }
+      background: #f8f5eb;
+      color: #E25C1C;
+      border-color: #E25C1C; }
 
 svg {
   width: 26px;
