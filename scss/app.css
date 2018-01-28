@@ -393,8 +393,7 @@ html {
 
 .c-input--search {
   background: #fff;
-  border-bottom: 2px solid #e9ab46;
-  transition: 0.4s; }
+  border-bottom: 2px solid #e9ab46; }
   @media (min-width: 46.25em) {
     .c-input--search {
       background: #fff url(../img/home/Shape.svg) no-repeat center right 10px; } }
@@ -502,7 +501,7 @@ svg {
   vertical-align: middle; }
 
 .c-icon--facebook {
-  background: #f8f5eb url("../img/svg/facebook.svg") no-repeat center center;
+  background: #f8f5eb url("../img/svg/facebook-logo.svg") no-repeat center center;
   background-size: 16px; }
 
 .c-icon--youtube {

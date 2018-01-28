@@ -27,7 +27,7 @@
 .c-input--search {
   background: #fff;
   border-bottom: 2px solid #e9ab46;
-  transition: 0.4s;
+  //transition: 0.4s;
   @include mq($from: tablet) {
     background: #fff url(../img/home/Shape.svg) no-repeat center right 10px;
   }
