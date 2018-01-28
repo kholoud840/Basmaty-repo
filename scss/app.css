@@ -249,6 +249,7 @@ html {
   display: none; }
   @media (min-width: 990px) {
     .c-header__menu {
+      border-right: 1px solid #eee;
       display: block;
       order: 1; }
       .c-header__menu .header__menu__item {
@@ -261,16 +262,19 @@ html {
       .c-header__menu a.active {
         color: #E25C1C;
         font-weight: 700; } }
+  @media (max-width: 1124px) {
+    .c-header__menu {
+      border-right: none; } }
 
 .c-header__logo a {
-  width: 140px;
+  width: 160px;
   display: flex;
   align-items: center;
-  padding: 22px; }
+  padding: 22px;
+  padding-bottom: 12px; }
 @media (min-width: 990px) {
   .c-header__logo {
-    order: 0;
-    border-left: 1px solid #eee; } }
+    order: 0; } }
 
 @media (min-width: 990px) {
   .c-header__social-links {
