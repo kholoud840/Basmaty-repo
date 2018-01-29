@@ -13,3 +13,9 @@ $mq-breakpoints: (
 @mixin basefont-regular {
   font-family: "sstarabicroman-regular";
 }
+
+@mixin not-last-child() {
+  &:not(:last-of-type) {
+    @content
+  }
+}
