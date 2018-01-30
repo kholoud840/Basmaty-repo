@@ -25,7 +25,10 @@
     padding-bottom: 70px;
   }
   h2 {
-    font-size: $unit-large;
+    font-size: 24px;
+    @include mq($from: tablet){
+      font-size: $unit-large;
+    }
   }
 
 }

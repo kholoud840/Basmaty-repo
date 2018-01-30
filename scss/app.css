@@ -215,7 +215,10 @@ html {
       background-position: bottom, bottom, center;
       padding-bottom: 70px; } }
   .c-section--hero h2 {
-    font-size: 32px; }
+    font-size: 24px; }
+    @media (min-width: 46.25em) {
+      .c-section--hero h2 {
+        font-size: 32px; } }
 
 .c-section--newsletter {
   background: url(../img/home/newsletter-pattern.png) no-repeat center bottom, linear-gradient(transparent, #FDFAF3 99%) no-repeat, #FDFAF3;
@@ -609,9 +612,12 @@ svg {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 24px;
+  font-size: 20px;
   margin-bottom: 26px;
   text-align: center; }
+  @media (min-width: 46.25em) {
+    .c-section-title {
+      font-size: 24px; } }
   .c-section-title span {
     padding-left: 16px;
     padding-right: 16px; }
