@@ -97,14 +97,15 @@
 
       a {
         display: inline-block;
-        padding-top: 22px;
-        padding-bottom: 22px;
+        padding-top: 18px;
+        padding-bottom: 26px;
       }
     }
 
     a.active {
       color: $color-brand-primary;
       font-weight: 700;
+      //background: url("../img/svg/smile.svg") no-repeat center bottom 6px;
     }
   }
   @media (max-width: 1124px) {

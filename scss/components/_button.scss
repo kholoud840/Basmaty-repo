@@ -6,14 +6,14 @@
 
 
 .c-button--search{
-  background: $color-brand-primary url(../img/home/Shape.svg) no-repeat 10px center;
+  background: $color-brand-primary url(../img/svg/Shape-white.svg) no-repeat 10px center;
   @include mq($from: tablet) {
     background: $color-brand-primary;
     }
 }
 
 .c-button--email{
-  background: $color-brand-primary url(../img/svg/mail.svg) no-repeat 10px center;
+  background: $color-brand-primary url(../img/svg/mail-white.svg) no-repeat 10px center;
   background-size: 26px;
   @include mq($from: tablet) {
     background: $color-brand-primary;

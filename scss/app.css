@@ -293,8 +293,8 @@ html {
         padding-right: 28px; }
         .c-header__menu .header__menu__item a {
           display: inline-block;
-          padding-top: 22px;
-          padding-bottom: 22px; }
+          padding-top: 18px;
+          padding-bottom: 26px; }
       .c-header__menu a.active {
         color: #E25C1C;
         font-weight: 700; } }
@@ -453,13 +453,13 @@ html {
   background-color: rgba(255, 255, 255, 0.43); }
 
 .c-button--search {
-  background: #E25C1C url(../img/home/Shape.svg) no-repeat 10px center; }
+  background: #E25C1C url(../img/svg/Shape-white.svg) no-repeat 10px center; }
   @media (min-width: 46.25em) {
     .c-button--search {
       background: #E25C1C; } }
 
 .c-button--email {
-  background: #E25C1C url(../img/svg/mail.svg) no-repeat 10px center;
+  background: #E25C1C url(../img/svg/mail-white.svg) no-repeat 10px center;
   background-size: 26px; }
   @media (min-width: 46.25em) {
     .c-button--email {
