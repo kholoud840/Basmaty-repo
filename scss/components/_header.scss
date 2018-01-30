@@ -85,40 +85,60 @@
 
 .c-header__menu {
   display: none;
+  ul{
+    display: flex;
+  }
 
   @media (min-width: 990px) {
     border-right: 1px solid #eee;
     display: block;
     order: 1;
 
-    .header__menu__item {
-      display: inline-block;
-      padding-right: 28px;
-
-      a {
-        display: inline-block;
-        padding-top: 18px;
-        padding-bottom: 26px;
+    svg {
+      path {
+        stroke-dasharray: 22;
+        stroke-dashoffset: 22;
+        transition: all 0.2s ease-out;
+      }
+      &:hover {
+        path {
+          stroke-dashoffset: 0;
+        }
       }
     }
 
-    a.active {
-      color: $color-brand-primary;
-      font-weight: 700;
-      //background: url("../img/svg/smile.svg") no-repeat center bottom 6px;
+    .header__menu__item {
+      //display: inline-block;
+      padding-right: 28px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      a {
+        display: inline-block;
+        padding-top: 18px;
+        //padding-bottom: 26px;
+      }
     }
   }
-  @media (max-width: 1124px) {
-    border-right: none;
+
+  a.active {
+    color: $color-brand-primary;
+    font-weight: 700;
+    //background: url("../img/svg/smile.svg") no-repeat center bottom 6px;
   }
 }
+
+@media (max-width: 1124px) {
+  border-right: none;
+}
+
+
 
 .c-header__logo {
 
   a {
     width: 160px;
     display: flex;
-    -moz-display: flex;
     align-items: center;
     padding: 22px;
     padding-bottom: 12px;

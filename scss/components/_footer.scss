@@ -10,7 +10,7 @@
 
 .c-footer__quick-links {
   border-bottom: 2px solid rgba(0, 0, 0, 0.08);
-  padding-bottom: $unit-large;
+  padding-bottom: $unit-small;
   @include mq($from: tablet) {
     margin-left: $unit-huge;
     padding-bottom: 0;
@@ -18,23 +18,28 @@
   }
   .c-footer__logo {
     @include mq($from: tablet) {
-      margin-bottom: $unit-large;
+      padding-bottom: $unit-large;
     }
     a {
       display: inline-block;
       background-size: 100% 100%;
-      width: 195px;
+      width: 155px;
+      @include mq($from: desktop) {
+        width: 195px;
+      }
     }
   }
 }
 
 .c-footer__social-links {
   border-bottom: 2px solid rgba(0, 0, 0, 0.08);
-  padding-bottom: $unit-large;
   @include mq($from: tablet) {
     margin-left: $unit-huge;
     padding-bottom: 0;
     border-bottom: 0;
+  }
+  @include mq($from: desktop){
+    padding-bottom: $unit-large;
   }
 
 }
@@ -70,7 +75,9 @@
 
 .c-footer__site-map {
   li {
-    margin-bottom: $unit-tiny;
+    @include mq($from: desktop) {
+      margin-bottom: $unit-tiny;
+    }
   }
   a {
     display: inline-block;
@@ -84,12 +91,20 @@
 
 .c-footer__title {
   padding-bottom: $unit-small;
-  margin-bottom: $unit;
+
   font-weight: 700;
 
   @include mq($from: tablet) {
     border-bottom: 1px solid #00000012;
+    margin-bottom: $unit-small;
+
   }
+  @include mq($from: desktop) {
+    border-bottom: 1px solid #00000012;
+    margin-bottom: $unit;
+
+  }
+
 
 }
 
@@ -105,5 +120,8 @@
 }
 
 .c-footer__social-media {
-  margin-bottom: $unit-large;
+
+  @include mq($from: desktop) {
+    margin-bottom: $unit-large;
+  }
 }
