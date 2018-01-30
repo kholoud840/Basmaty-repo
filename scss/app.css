@@ -826,7 +826,9 @@ svg {
   box-shadow: 0 0 18px #e5e5e5;
   border-radius: 4px;
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  display: flex;
+  flex-direction: column; }
 
 .c-featured-recipe__thumb {
   width: 100%;
@@ -854,7 +856,10 @@ svg {
   font-size: 14px; }
 
 .c-featured-recipe__details {
-  padding: 8px 16px 16px; }
+  padding: 8px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  height: 100%; }
 
 .c-featured-recipe__description {
   padding: 6px 0;
@@ -867,7 +872,8 @@ svg {
       display: block; } }
 
 .c-featured-recipe__popularity {
-  display: flex; }
+  display: flex;
+  margin-top: auto; }
 
 .c-featured-recipe__name {
   font-size: 18px; }

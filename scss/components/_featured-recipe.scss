@@ -3,6 +3,8 @@
   border-radius: 4px;
   overflow: hidden;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .c-featured-recipe__thumb{
@@ -33,6 +35,9 @@
 }
 .c-featured-recipe__details{
   padding: $unit-small $unit $unit;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 .c-featured-recipe__description{
     padding: 6px 0;
@@ -48,6 +53,7 @@
 }
 .c-featured-recipe__popularity{
   display: flex;
+  margin-top: auto;
 
 }
 
