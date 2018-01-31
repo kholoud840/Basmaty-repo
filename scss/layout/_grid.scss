@@ -25,9 +25,6 @@
 }
 
 .o-layout--3 {
-  div{ //wrong
-    //flex-basis: 33.3333%;
-  }
   @media (min-width: 700px) {
     grid-template-columns: repeat(3, 1fr);
   }
