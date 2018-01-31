@@ -4,17 +4,20 @@
   margin-bottom: 1rem;
   border-radius: 4px;
   overflow: hidden;
-  height: 0;
-  padding-bottom: 60%;
   position: relative;
   transition: 0.4s;
+  &::after {
+    content: "";
+    display: block;
+    height: 0;
+    padding-bottom: 60%;
+  }
   img {
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
   }
-
 
 }
 
@@ -37,7 +40,7 @@
 
   a {
     transition: 0.4s;
-    &:hover{
+    &:hover {
       color: $color-brand-primary;
     }
     &::after {
@@ -87,8 +90,8 @@
   }
 }
 
-.c-recipe__rating{
-  order:2;
+.c-recipe__rating {
+  order: 2;
   margin-bottom: $unit-tiny;
 
 }
