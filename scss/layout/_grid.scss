@@ -13,6 +13,11 @@
 }
 
 .o-layout {
+  //grid fallback:
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+
   display: grid;
   grid-gap: $unit;
   grid-template-rows: 1fr;
@@ -20,7 +25,9 @@
 }
 
 .o-layout--3 {
-
+  div{ //wrong
+    //flex-basis: 33.3333%;
+  }
   @media (min-width: 700px) {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -29,7 +36,7 @@
 
 .o-layout--4 {
 
-  @media (min-width: 700px) {
+  @media (min-width: 960px) {
     grid-template-columns: repeat(4, 1fr);
   }
 

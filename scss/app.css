@@ -146,6 +146,9 @@ html {
       padding-right: 0; } }
 
 .o-layout {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
   display: grid;
   grid-gap: 16px;
   grid-template-rows: 1fr;
@@ -155,7 +158,7 @@ html {
   .o-layout--3 {
     grid-template-columns: repeat(3, 1fr); } }
 
-@media (min-width: 700px) {
+@media (min-width: 960px) {
   .o-layout--4 {
     grid-template-columns: repeat(4, 1fr); } }
 
@@ -339,6 +342,8 @@ html {
 @media (min-width: 990px) {
   .c-header__logo {
     order: 0; } }
+.c-header__logo img {
+  width: 120px; }
 
 @media (min-width: 990px) {
   .c-header__social-links {
