@@ -61,6 +61,10 @@
 .c-featured-recipe__name {
   font-size: 18px;
   a {
+    transition: 0.4s;
+    &:hover{
+      color: $color-brand-primary;
+    }
     &::after {
       content: "";
       position: absolute;

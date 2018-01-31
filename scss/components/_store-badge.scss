@@ -10,6 +10,11 @@
   padding: 8px;
   padding-right: 38px;
   margin-bottom: $unit;
+  transition: 0.4s ;
+
+  &:hover{
+    box-shadow: 0 0 16px #ab5111;
+  }
   @include mq($from: desktop) {
     margin-bottom: 0;
   }
