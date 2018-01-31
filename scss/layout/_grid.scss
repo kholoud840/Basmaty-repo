@@ -28,15 +28,12 @@
   @media (min-width: 700px) {
     grid-template-columns: repeat(3, 1fr);
   }
-
 }
 
 .o-layout--4 {
-
   @media (min-width: 960px) {
     grid-template-columns: repeat(4, 1fr);
   }
-
 }
 
 .o-layout--small {
@@ -45,7 +42,6 @@
     max-width: 100%;
     margin: 0 auto;
   }
-
 }
 
 .o-layout--main {

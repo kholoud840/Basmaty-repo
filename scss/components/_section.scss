@@ -9,12 +9,11 @@
 
 .c-section--hero {
   box-shadow: 0 4px 10px #e7e7e7;
-  background:
-  linear-gradient(transparent, #F9F9F9 99%) no-repeat,
+  background: linear-gradient(transparent, #F9F9F9 99%) no-repeat,
   url(../img/home/hero-pattern.png) no-repeat center center;
-  background-size:  cover;
+  background-size: cover;
   background-position: center;
-  padding-bottom:30px;
+  padding-bottom: 30px;
 
   @include mq($from: desktop) {
     background: url(../img/home/basmaty-pattern2.png) no-repeat center bottom,
@@ -26,7 +25,7 @@
   }
   h2 {
     font-size: 24px;
-    @include mq($from: tablet){
+    @include mq($from: tablet) {
       font-size: $unit-large;
     }
   }
@@ -38,4 +37,12 @@
   background-size: cover;
   background-position: center;
   border-top: 3px solid $color-brand-secondary;
+}
+
+.c-section--recipe {
+  background: linear-gradient(transparent, #efefef 99%) no-repeat,
+  url(../img/home/hero-pattern.png) no-repeat center center, #efefef;
+  background-size: 100% 200px, cover;
+  background-position: center;
+  padding-bottom: 220px;
 }

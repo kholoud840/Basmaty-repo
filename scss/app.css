@@ -229,6 +229,12 @@ html {
   background-position: center;
   border-top: 3px solid #F4AC29; }
 
+.c-section--recipe {
+  background: linear-gradient(transparent, #efefef 99%) no-repeat, url(../img/home/hero-pattern.png) no-repeat center center, #efefef;
+  background-size: 100% 200px, cover;
+  background-position: center;
+  padding-bottom: 220px; }
+
 .c-header {
   box-shadow: 0 0 4px #b8b8b8;
   position: relative; }
@@ -508,36 +514,35 @@ html {
     .c-button--email {
       background: #E25C1C; } }
 
-.c-form--small {
-  margin-bottom: 32px; }
-  .c-form--small label {
-    display: none; }
-  .c-form--small form {
-    width: 100%;
-    position: relative;
-    max-width: 100%; }
-  .c-form--small form p {
-    display: flex; }
-  .c-form--small form button {
-    font-family: "sstarabicroman-regular";
+.c-form--small label {
+  display: none; }
+.c-form--small form {
+  width: 100%;
+  position: relative;
+  max-width: 100%; }
+.c-form--small form p {
+  display: flex; }
+.c-form--small form button {
+  font-family: "sstarabicroman-regular";
+  color: #fff;
+  border: none;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  font-size: 16px;
+  padding: 22px; }
+  .c-form--small form button span {
     color: #fff;
-    border: none;
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
-    font-size: 16px;
-    padding: 22px; }
-    .c-form--small form button span {
-      color: #fff;
-      display: none; }
-    @media (min-width: 46.25em) {
-      .c-form--small form button {
-        background: #E25C1C;
-        padding: 10px 16px 14px 16px; }
-        .c-form--small form button span {
-          display: block; } }
+    display: none; }
+  @media (min-width: 46.25em) {
+    .c-form--small form button {
+      background: #E25C1C;
+      padding: 10px 16px 14px 16px; }
+      .c-form--small form button span {
+        display: block; } }
 
 .c-tags {
-  text-align: center; }
+  text-align: center;
+  margin-top: 32px; }
 
 .c-tag {
   display: inline-block;
