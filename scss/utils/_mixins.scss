@@ -19,3 +19,8 @@ $mq-breakpoints: (
     @content
   }
 }
+@mixin not-first-child() {
+  &:not(:first-of-type) {
+    @content
+  }
+}

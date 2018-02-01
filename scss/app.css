@@ -971,4 +971,35 @@ svg {
   left: 50%;
   transform: translate(-50%, -50%); }
 
+.c-breadcrumb li {
+  display: inline-block; }
+  @media (min-width: 600px) {
+    .c-breadcrumb li:not(:last-of-type) {
+      /*::after{
+        content: '';
+        display: inline-block;
+        width:16px;
+        height:16px;
+        vertical-align: middle;
+        background: url("../img/svg/angle-pointing-to-left.svg") no-repeat center right;
+      }*/
+      padding-left: 16px;
+      background: url(../img/svg/angle-pointing-to-left.svg) no-repeat top 12px left;
+      background-size: 16px; } }
+  @media (max-width: 600px) {
+    .c-breadcrumb li:not(:first-of-type) {
+      padding-left: 0;
+      padding-right: 16px;
+      background: url(../img/svg/angle-pointing-to-left.svg) no-repeat top 16px right;
+      background-size: 14px;
+      display: block; } }
+.c-breadcrumb a {
+  display: inline-block;
+  padding: 0 8px; }
+  @media (max-width: 500px) {
+    .c-breadcrumb a {
+      font-size: 14px; } }
+.c-breadcrumb a.current {
+  font-weight: 700; }
+
 /*# sourceMappingURL=app.css.map */
