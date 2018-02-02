@@ -716,42 +716,42 @@ svg {
   .c-rating__stars[data-rating="5"]::before {
     width: 100%; }
 
-.c-recipe__thumb {
+.c-media__thumb {
   width: 100%;
   margin-bottom: 1rem;
   border-radius: 4px;
   overflow: hidden;
   position: relative;
   transition: 0.4s; }
-  .c-recipe__thumb::after {
+  .c-media__thumb::after {
     content: "";
     display: block;
     height: 0;
     padding-bottom: 60%; }
-  .c-recipe__thumb img {
+  .c-media__thumb img {
     position: absolute;
     left: 0;
     top: 0;
     width: 100%; }
 
-.c-recipe {
+.c-media {
   margin-bottom: 16px;
   display: flex;
   flex-direction: column;
   position: relative; }
 
-.c-recipe__content {
+.c-media__content {
   margin-bottom: 2rem; }
 
-.c-recipe__title {
+.c-media__title {
   font-size: 18px;
   font-weight: 700;
   order: 1; }
-  .c-recipe__title a {
+  .c-media__title a {
     transition: 0.4s; }
-    .c-recipe__title a:hover {
+    .c-media__title a:hover {
       color: #E25C1C; }
-    .c-recipe__title a::after {
+    .c-media__title a::after {
       content: "";
       position: absolute;
       left: 0;
@@ -760,34 +760,34 @@ svg {
       height: 100%;
       z-index: 2; }
 
-.c-recipe__description {
+.c-media__description {
   font-size: 14px;
   order: 0; }
 
-.c-recipe__author__name {
+.c-media__author__name {
   font-size: 14px; }
 
-.c-recipe__author {
+.c-media__author {
   margin-top: auto;
   order: 2;
   z-index: 3; }
-  .c-recipe__author a {
+  .c-media__author a {
     display: inline-block;
     width: 100%;
     /*??*/ }
-    .c-recipe__author a:hover {
+    .c-media__author a:hover {
       color: #E25C1C; }
 
-.c-recipe__author__icon {
+.c-media__author__icon {
   display: inline-block;
   width: 30px;
   height: 30px;
   vertical-align: middle; }
-  .c-recipe__author__icon img {
+  .c-media__author__icon img {
     width: 100%;
     object-fit: contain; }
 
-.c-recipe__rating {
+.c-media__rating {
   order: 2;
   margin-bottom: 4px; }
 
