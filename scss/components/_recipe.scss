@@ -1,0 +1,175 @@
+.c-recipe__title {
+  font-size: 22px;
+  font-weight: 700;
+  @include mq($from: tablet) {
+    font-size: $unit-large;
+  }
+  a {
+    color: $color-brand-primary;
+  }
+}
+
+.c-recipe__summary {
+  color: #676767;
+  margin-bottom: 26px;
+  font-size: 14px;
+  @include mq($from: tablet) {
+    font-size: $unit;
+  }
+}
+
+.c-recipe__image-container {
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0px 4px 16px #a9a9a9;
+  &::after {
+    content: "";
+    display: block;
+    height: 0;
+    padding-bottom: 64%;
+  }
+  img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+}
+
+.c-recipe__popularity {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.c-recipe__print {
+  margin-right: auto;
+}
+
+.c-recipe__section-title {
+  color: $color-brand-primary;
+  font-weight: 700;
+  font-size: 20px;
+  padding-top: 8px;
+}
+
+.c-recipe__section-subtitle {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.c-recipe__ingredients {
+  li {
+    font-size: 14px;
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: $color-brand-secondary;
+      margin-left: $unit-small;
+    }
+  }
+}
+
+.c-recipe__instructions {
+  counter-reset: step;
+  li {
+    display: flex;
+    &::before {
+      content: '';
+      counter-increment: step;
+      content: counters(step, "");
+      padding-left: $unit-small;
+      color: $color-brand-primary;
+    }
+  }
+}
+
+.c-recipe__content {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: $unit;
+}
+
+.c-recipe__review {
+  h3 {
+    margin-bottom: $unit;
+    margin-top: $unit;
+  }
+  textarea {
+    width: 100%;
+    border-radius: 4px;
+    border: none;
+    border: 1px solid #ccc;
+    resize: none;
+    outline: none;
+    overflow: hidden;
+  }
+}
+
+.c-recipe__summary-data {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: $unit;
+  padding-bottom: $unit;
+}
+
+.c-recipe__summary-data-item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-right: 52px;
+  margin-left: 64px;
+  line-height: 1.5;
+
+  span {
+    font-size: 14px;
+    color: #888;
+  }
+  strong {
+    color: $color-brand-primary;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-size: 100px;
+    //border-radius: 50%;
+    position: absolute;
+    left: 60%;
+    vertical-align: middle;
+    top: 50%;
+    transform: translateY(-50%);
+    background-size: 40px, 50px;
+    background-repeat: no-repeat;
+  }
+}
+
+.c-recipe--yield {
+  &::before {
+    background: url(../img/svg/serving.svg) no-repeat top, radial-gradient(circle, #f8f5eb 22px, transparent 1px) center;
+  }
+
+}
+
+.c-recipe--total-time {
+  &::before {
+    background: url(../img/svg/cooking.svg) no-repeat top, radial-gradient(circle, #f8f5eb 22px, transparent 1px) center;
+  }
+}
+
+.c-recipe--active-time {
+  &::before {
+    background: url(../img/svg/prepartion.svg) no-repeat top, radial-gradient(circle, #f8f5eb 22px, transparent 1px) center;
+  }
+}

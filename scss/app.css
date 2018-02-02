@@ -145,6 +145,9 @@ html {
       padding-left: 0;
       padding-right: 0; } }
 
+.container--small {
+  width: 750px; }
+
 .o-layout {
   display: flex;
   justify-content: space-between;
@@ -230,10 +233,9 @@ html {
   border-top: 3px solid #F4AC29; }
 
 .c-section--recipe {
-  background: linear-gradient(transparent, #efefef 99%) no-repeat, url(../img/home/hero-pattern.png) no-repeat center center, #efefef;
-  background-size: 100% 200px, cover;
-  background-position: center;
-  padding-bottom: 220px; }
+  background: linear-gradient(transparent 350px, #fff 350px) no-repeat, url(../img/home/hero-pattern.png) no-repeat center center, #f7f7f7;
+  background-size: 100% auto;
+  background-position: top; }
 
 .c-header {
   box-shadow: 0 0 4px #b8b8b8;
@@ -998,8 +1000,143 @@ svg {
   padding: 0 8px; }
   @media (max-width: 500px) {
     .c-breadcrumb a {
-      font-size: 14px; } }
+      font-size: 12px; } }
 .c-breadcrumb a.current {
   font-weight: 700; }
+
+.c-recipe__title {
+  font-size: 22px;
+  font-weight: 700; }
+  @media (min-width: 46.25em) {
+    .c-recipe__title {
+      font-size: 32px; } }
+  .c-recipe__title a {
+    color: #E25C1C; }
+
+.c-recipe__summary {
+  color: #676767;
+  margin-bottom: 26px;
+  font-size: 14px; }
+  @media (min-width: 46.25em) {
+    .c-recipe__summary {
+      font-size: 16px; } }
+
+.c-recipe__image-container {
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0px 4px 16px #a9a9a9; }
+  .c-recipe__image-container::after {
+    content: "";
+    display: block;
+    height: 0;
+    padding-bottom: 64%; }
+  .c-recipe__image-container img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
+.c-recipe__popularity {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  padding-top: 16px;
+  padding-bottom: 16px; }
+
+.c-recipe__print {
+  margin-right: auto; }
+
+.c-recipe__section-title {
+  color: #E25C1C;
+  font-weight: 700;
+  font-size: 20px;
+  padding-top: 8px; }
+
+.c-recipe__section-subtitle {
+  font-weight: 700;
+  font-size: 14px; }
+
+.c-recipe__ingredients li {
+  font-size: 14px; }
+  .c-recipe__ingredients li::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #F4AC29;
+    margin-left: 8px; }
+
+.c-recipe__instructions {
+  counter-reset: step; }
+  .c-recipe__instructions li {
+    display: flex; }
+    .c-recipe__instructions li::before {
+      content: '';
+      counter-increment: step;
+      content: counters(step,"");
+      padding-left: 8px;
+      color: #E25C1C; }
+
+.c-recipe__content {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 16px; }
+
+.c-recipe__review h3 {
+  margin-bottom: 16px;
+  margin-top: 16px; }
+.c-recipe__review textarea {
+  width: 100%;
+  border-radius: 4px;
+  border: none;
+  border: 1px solid #ccc;
+  resize: none;
+  outline: none;
+  overflow: hidden; }
+
+.c-recipe__summary-data {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 16px;
+  padding-bottom: 16px; }
+
+.c-recipe__summary-data-item {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-right: 52px;
+  margin-left: 64px;
+  line-height: 1.5; }
+  .c-recipe__summary-data-item span {
+    font-size: 14px;
+    color: #888; }
+  .c-recipe__summary-data-item strong {
+    color: #E25C1C;
+    font-size: 16px;
+    font-weight: 700; }
+  .c-recipe__summary-data-item::before {
+    content: '';
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-size: 100px;
+    position: absolute;
+    left: 60%;
+    vertical-align: middle;
+    top: 50%;
+    transform: translateY(-50%);
+    background-size: 40px, 50px;
+    background-repeat: no-repeat; }
+
+.c-recipe--yield::before {
+  background: url(../img/svg/serving.svg) no-repeat top, radial-gradient(circle, #f8f5eb 22px, transparent 1px) center; }
+
+.c-recipe--total-time::before {
+  background: url(../img/svg/cooking.svg) no-repeat top, radial-gradient(circle, #f8f5eb 22px, transparent 1px) center; }
+
+.c-recipe--active-time::before {
+  background: url(../img/svg/prepartion.svg) no-repeat top, radial-gradient(circle, #f8f5eb 22px, transparent 1px) center; }
 
 /*# sourceMappingURL=app.css.map */
