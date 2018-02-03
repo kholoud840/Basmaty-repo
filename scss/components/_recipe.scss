@@ -48,7 +48,12 @@
 }
 
 .c-recipe__print {
-  margin-right: auto;
+  display: none;
+  @include mq($from : desktop){
+    display: block;
+    margin-right: auto;
+  }
+
 }
 
 .c-recipe__section-title {
@@ -114,19 +119,60 @@
 }
 
 .c-recipe__summary-data {
-  display: flex;
-  flex-wrap: wrap;
-  padding-top: $unit;
-  padding-bottom: $unit;
+  padding-top: $unit-small;
+  padding-bottom: $unit-small;
+  border-bottom: 1px solid #eee;
+
+  @include mq($from : tablet){
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: $unit;
+    padding-bottom: $unit;
+    border-bottom: none;
+  }
+
+}
+
+.c-recipe__summary-data {
+  //display: flex;
+  //flex-wrap: wrap;
+  //padding-top: $unit;
+ // padding-bottom: $unit;
 }
 
 .c-recipe__summary-data-item {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  padding-right: 52px;
-  margin-left: 64px;
-  line-height: 1.5;
+  //display: flex;
+  //flex-direction: column;
+  //position: relative;
+  //padding-right: 52px;
+  //margin-left: 64px;
+  //line-height: 1.5;
+
+  @include mq($from : tablet){
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-right: 52px;
+    margin-left: 64px;
+    line-height: 1.5;
+
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      //background-size: 100px;
+      //border-radius: 50%;
+      position: absolute;
+      left: 60%;
+      vertical-align: middle;
+      top: 50%;
+      transform: translateY(-50%);
+      background-size: 40px, 50px;
+      background-repeat: no-repeat;
+    }
+  }
 
   span {
     font-size: 14px;
@@ -138,21 +184,6 @@
     font-weight: 700;
   }
 
-  &::before {
-    content: '';
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    background-size: 100px;
-    //border-radius: 50%;
-    position: absolute;
-    left: 60%;
-    vertical-align: middle;
-    top: 50%;
-    transform: translateY(-50%);
-    background-size: 40px, 50px;
-    background-repeat: no-repeat;
-  }
 }
 
 .c-recipe--yield {
