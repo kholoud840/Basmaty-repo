@@ -1018,12 +1018,11 @@ svg {
 
 .c-recipe__title {
   font-size: 22px;
-  font-weight: 700; }
+  font-weight: 700;
+  color: #E25C1C; }
   @media (min-width: 46.25em) {
     .c-recipe__title {
       font-size: 32px; } }
-  .c-recipe__title a {
-    color: #E25C1C; }
 
 .c-recipe__summary {
   color: #676767;

@@ -5,11 +5,9 @@
 .c-recipe__title {
   font-size: 22px;
   font-weight: 700;
+  color: $color-brand-primary;
   @include mq($from: tablet) {
     font-size: $unit-large;
-  }
-  a {
-    color: $color-brand-primary;
   }
 }
 
