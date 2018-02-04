@@ -1,3 +1,7 @@
+.c-recipe {
+  position: relative;
+}
+
 .c-recipe__title {
   font-size: 22px;
   font-weight: 700;
@@ -42,14 +46,16 @@
 
 .c-recipe__popularity {
   display: flex;
-  border-bottom: 1px solid #ccc;
   padding-top: 16px;
   padding-bottom: 16px;
+  @include mq($from: desktop) {
+    border-bottom: 1px solid #ccc;
+  }
 }
 
 .c-recipe__print {
   display: none;
-  @include mq($from : desktop){
+  @include mq($from: desktop) {
     display: block;
     margin-right: auto;
   }
@@ -123,7 +129,7 @@
   padding-bottom: $unit-small;
   border-bottom: 1px solid #eee;
 
-  @include mq($from : tablet){
+  @include mq($from: tablet) {
     display: flex;
     flex-wrap: wrap;
     padding-top: $unit;
@@ -133,22 +139,8 @@
 
 }
 
-.c-recipe__summary-data {
-  //display: flex;
-  //flex-wrap: wrap;
-  //padding-top: $unit;
- // padding-bottom: $unit;
-}
-
 .c-recipe__summary-data-item {
-  //display: flex;
-  //flex-direction: column;
-  //position: relative;
-  //padding-right: 52px;
-  //margin-left: 64px;
-  //line-height: 1.5;
-
-  @include mq($from : tablet){
+  @include mq($from: tablet) {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -156,14 +148,11 @@
     margin-left: 64px;
     line-height: 1.5;
 
-
     &::before {
       content: '';
       display: inline-block;
       width: 50px;
       height: 50px;
-      //background-size: 100px;
-      //border-radius: 50%;
       position: absolute;
       left: 60%;
       vertical-align: middle;
@@ -203,4 +192,76 @@
   &::before {
     background: url(../img/svg/prepartion.svg) no-repeat top, radial-gradient(circle, #f8f5eb 22px, transparent 1px) center;
   }
+}
+
+.c-recipe__side-content {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 8px;
+  @include mq($from: 1266px) {
+    position: absolute;
+    top: 320px;
+    background: #fff;
+    right: 100%;
+    width: 40%;
+  }
+}
+
+.c-recipe__brought-by {
+  display: inline-block;
+  padding: 4px 16px;
+  background: orange;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+
+  Strong {
+    font-weight: 700;
+  }
+  @include mq($from:1266px) {
+    display: inline-block;
+    border-radius: 0;
+
+  }
+}
+
+.c-recipe__share {
+  @include mq($from: 1266px) {
+    padding-right: $unit;
+  }
+}
+
+.c-recipe__author {
+  span {
+    font-size: 14px;
+  }
+  strng {
+    font-weight: 700;
+  }
+  padding: $unit 0;
+  @include mq($from: 1266px) {
+    padding: $unit-large 0;
+    padding-right: $unit;
+    display: flex;
+    align-items: center;
+    .c-recipe__author__info {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.5;
+    }
+  }
+}
+
+.c-recipe__author__icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  margin-left: 10px;
+  img {
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+.c-recipe__author__info {
+  display: inline-block;
 }

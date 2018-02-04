@@ -2,11 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>الوصفه</title>
+    <title>Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="scss/app.css">
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/app.js"></script>
 </head>
 <body>
 <svg style="display: none;">
@@ -85,12 +83,19 @@
     </defs>
 
     <defs>
-        <g id="icon-print">
-            <path d="M38 18H26a2 2 0 0 0-2 2v1h16v-1a2 2 0 0 0-2-2zM26 46h11v-9H26v9zm15-17a1 1 0 1 0 .002-1.998A1 1 0 0 0 41 29zM32 0C14.327 0 0 14.327 0 32s14.327 32 32 32 32-14.327 32-32S49.673 0 32 0zm7 46a2 2 0 0 1-2 2H26a2 2 0 0 1-2-2v-9a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v9zm-1-18a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm10 9a4 4 0 0 1-4 4h-3v-2h3a2 2 0 0 0 2-2V25a2 2 0 0 0-2-2H20a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h2v2h-2a4 4 0 0 1-4-4V25a4 4 0 0 1 4-4h2v-1a4 4 0 0 1 4-4h12a4 4 0 0 1 4 4v1h2a4 4 0 0 1 4 4v12z"/>
+        <g id="icon-next">
+            <path d="M360.731 229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1 0s-5.3 13.8 0 19.1l215.5 215.5-215.5 215.5c-5.3 5.3-5.3 13.8 0 19.1 2.6 2.6 6.1 4 9.5 4 3.4 0 6.9-1.3 9.5-4l225.1-225.1c5.3-5.2 5.3-13.8.1-19z"/>
+        </g>
+    </defs>
+
+    <defs>
+        <g id="icon-back">
+            <path d="M88.6 121.3c.8.8 1.8 1.2 2.9 1.2s2.1-.4 2.9-1.2c1.6-1.6 1.6-4.2 0-5.8l-51-51 51-51c1.6-1.6 1.6-4.2 0-5.8s-4.2-1.6-5.8 0l-54 53.9c-1.6 1.6-1.6 4.2 0 5.8l54 53.9z"/>
         </g>
     </defs>
 
 </svg>
+
 
 <header class="c-header" role="banner" itemscope itemtype="http://schema.org/WPHeader">
     <div class="container">
@@ -193,7 +198,6 @@
         </div>
     </div>
 </header>
-
 <main>
     <section class="c-section">
         <div class="container">
@@ -212,252 +216,112 @@
             </div>
         </div>
     </section>
-    <section class="c-section c-section--recipe">
-        <div class="container container--small">
-            <ul class="c-breadcrumb">
-                <li><a href="#">الرئيسيه</a></li>
-                <li><a href="#">طبق رئيسي</a></li>
-                <li><a class="current" href="#">طريقة عمل ساندويش شاورما في البيت</a></li>
-            </ul>
-            <article class="c-recipe">
-                <h1 class="c-recipe__title"><a href="#">طريقة عمل ساندويش شاورما في البيت</a></h1>
-                <p class="c-recipe__summary">وصفة شاورما دجاج, وصفه مميزه مقدمه من دجاج انتاج اكتشفو طريقة عمل هذه
-                    الوصفه بالفيدو من بسمتي طريقة عمل هذه الوصفه بالفيدو من بسمتي</p>
-                <div class="c-recipe__image-container c-recipe--video">
-                    <img src="img/Chicken-Shawarma-Sandwich-Slider-1.jpg" alt="hicken-Shawarma-Sandwich">
-                </div>
-                <div class="c-recipe__popularity">
-                    <div class="c-rating">
-                        <div class="c-rating__stars" data-rating="3"></div>
-                        <span>3/5</span>
-                    </div>
-                    <div class="c-viewers">
-                        <span><strong>2.5k</strong> مشاهده</span>
-                    </div>
-                    <div class="c-recipe__print">
-                        <svg class="c-icon c-icon--print" width="26" height="26" viewBox="0 0 64 64" fill="#F4AC29">
-                            <use xmlns="http://www.w3.org/2000/svg" xlink:href="#icon-print"></use>
-                        </svg>
-                        <span>طباعة الوصفه</span>
-                    </div>
-                </div>
-                <div class="c-recipe__side-content">
-                    <div class="c-recipe__brought-by"> هذا الفيديو برعاية <strong>زيت زيتون سيرجيلا</strong>
-                    </div>
-                    <div class="c-recipe__author">
-                         <span class="c-recipe__author__icon">
-                             <img src="img/basmaty-user@2x-100.jpg" alt="">
-                         </span>
-                        <div class="c-recipe__author__info">
-                        <span>بواسطه</span>
-                        <strong>فريق بسمتي</strong>
-                        </div>
-                    </div>
-                    <div class="c-recipe__share">
-                        <span>شارك الوصفه مع محبيك</span>
-                        <ul class="c-header__social-media">
-                            <li><a class="c-icon--circle c-icon--facebook" href="#"></a></li>
-                            <li><a class="c-icon--circle c-icon--instagram" href="#"></a></li>
-                            <li><a class="c-icon--circle c-icon--youtube" href="#"></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="c-recipe__summary-data">
-                    <div class="c-recipe__summary-data-item c-recipe--yield">
-                        <span>تكفي</span>
-                        <span>6 <strong>اشخاص</strong></span>
-                    </div>
-                    <div class="c-recipe__summary-data-item c-recipe--active-time">
-                        <span>الطهي</span>
-                        <span>2 <strong>ساعه</strong></span>
-                    </div>
-                    <div class="c-recipe__summary-data-item c-recipe--total-time">
-                        <span>التحضير</span>
-                        <span>1 <strong>ساعه</strong></span>
-                    </div>
 
+    <section class="c-section c-section--search-results">
+        <div class="container">
+            <article class="c-media-horizontal o-layout--2" itemscope itemtype="http://schema.org/Recipe">
+                <div class="c-media__thumb c-recipe--video">
+                    <img itemprop="image" src="img/Rectangle%2042.jpg" alt="">
                 </div>
-                <div class="c-recipe__content">
-                    <h2 class="c-recipe__section-title">المقادير</h2>
-                    <h3 class="c-recipe__section-subtitle">لورق العنب:</h3>
-                    <ul class="c-recipe__ingredients">
-                        <li>حبة بطاطا مقشره ومقطعه الى شرائح</li>
-                        <li>ورق عنب حجم وسط</li>
-                        <li>قطع متوسطه من اللحم مع العظم</li>
-                        <li>كوسا حسب الرغبة</li>
-                        <li>حبة بندورة مفرومه ناعم</li>
-                        <li>ملعقة صغيره زيت زيتون</li>
-                        <li>ملعقة صغيره زيت زيتون</li>
-                    </ul>
-                    <h3 class="c-recipe__section-subtitle"> للحشو:</h3>
-                    <ul class="c-recipe__ingredients">
-                        <li>حبة بطاطا مقشره ومقطعه الى شرائح</li>
-                        <li>ورق عنب حجم وسط</li>
-                        <li>قطع متوسطه من اللحم مع العظم</li>
-                        <li>كوسا حسب الرغبة</li>
-                        <li>حبة بندورة مفرومه ناعم</li>
-                        <li>ملعقة صغيره زيت زيتون</li>
-                        <li>ملعقة صغيره زيت زيتون</li>
-                    </ul>
-                    <h2 class="c-recipe__section-title">طريقة التحضير:</h2>
-                    <ul class="c-recipe__instructions">
-                        <li>نقع ورق العنب بماء مغلي مدة 10 دقائق لتسهيل عمليه لفه</li>
-                        <li>حبة بطاطا مقشره ومقطعه الى شرائح</li>
-                        <li>غسل اللحمه جيدا وتتبيلها بزيت الزيتون والفلفل الاسود</li>
-                        <li>تجهيز الحشوة بجميع المكونات وخلطها جيدا ونبدأ بحشو الكوسا ولف الورق</li>
-                        <li>الانتظار ساعة بعد التصفير ومن ثم فتحها لتتشرب الماء المتبقي لانتظار ساعة بعد التصفير ومن ثم
-                            فتحها لتتشرب الماء المتبقي لانتظار ساعة بعد التصفير ومن ثم فتحها لتتشرب الماء المتبقي
-                        </li>
-                        <li>حبة بطاطا مقشره ومقطعه الى شرائح</li>
-                        <li>غسل اللحمه جيدا وتتبيلها بزيت الزيتون والفلفل الاسود</li>
-                        <li>تجهيز الحشوة بجميع المكونات وخلطها جيدا ونبدأ بحشو الكوسا ولف الورق</li>
-                    </ul>
+                <div class="c-media-horizontal__details">
+                    <h3 class="c-media__title" itemprop="name"><a href="#">طريقة عمل القريدس ماسالا </a></h3>
+                    <p class="c-media__description">ظار ساعة بعد التصفير ومن ثم فتحها لتتشرب الماء المتبقي لانتظار ساعة بعد التصفير ومن ثم
+                        فتحها لتتشرب الماء المتبقي لانتظار ساعة بعد التصفير ومن ثم فتحها لتتشرب الم</p>
+                    <div class="c-media__author">
+                        <a href="#">
+                              <span class="c-media__author__icon">
+                                    <img src="img/basmaty-user@2x-100.jpg" alt="">
+                              </span>
+                            <span class="c-media__author__name" itemprop="author">فريق بسمتي </span>
+                        </a>
+                    </div>
                 </div>
-                <div class="c-recipe__review">
-                    <h3>اكتب تعليقك</h3>
-                    <form action="#">
-                        <textarea rows="6">
-                        </textarea>
-                    </form>
+            </article>
+            <article class="c-media-horizontal o-layout--2" itemscope itemtype="http://schema.org/Recipe">
+                <div class="c-media__thumb c-recipe--video">
+                    <img itemprop="image" src="img/Rectangle%2042.jpg" alt="">
+                </div>
+                <div class="c-media-horizontal__details">
+                    <h3 class="c-media__title" itemprop="name"><a href="#">طريقة عمل القريدس ماسالا </a></h3>
+                    <p class="c-media__description">ظار ساعة بعد التصفير ومن ثم فتحها لتتشرب الماء المتبقي لانتظار ساعة بعد التصفير ومن ثم
+                        فتحها لتتشرب الماء المتبقي لانتظار ساعة بعد التصفير ومن ثم فتحها لتتشرب الم</p>
+                    <div class="c-media__author">
+                        <a href="#">
+                              <span class="c-media__author__icon">
+                                    <img src="img/basmaty-user@2x-100.jpg" alt="">
+                              </span>
+                            <span class="c-media__author__name" itemprop="author">فريق بسمتي </span>
+                        </a>
+                    </div>
+                </div>
+            </article>
+            <article class="c-media-horizontal o-layout--2" itemscope itemtype="http://schema.org/Recipe">
+                <div class="c-media__thumb c-recipe--video">
+                    <img itemprop="image" src="img/Rectangle%2042.jpg" alt="">
+                </div>
+                <div class="c-media-horizontal__details">
+                    <h3 class="c-media__title" itemprop="name"><a href="#">طريقة عمل القريدس ماسالا </a></h3>
+                    <p class="c-media__description">ظار ساعة بعد التصفير ومن ثم فتحها لتتشرب الماء المتبقي لانتظار ساعة بعد التصفير ومن ثم
+                        فتحها لتتشرب الماء المتبقي لانتظار ساعة بعد التصفير ومن ثم فتحها لتتشرب الم</p>
+                    <div class="c-media__author">
+                        <a href="#">
+                              <span class="c-media__author__icon">
+                                    <img src="img/basmaty-user@2x-100.jpg" alt="">
+                              </span>
+                            <span class="c-media__author__name" itemprop="author">فريق بسمتي </span>
+                        </a>
+                    </div>
+                </div>
+            </article>
+            <article class="c-media-horizontal o-layout--2" itemscope itemtype="http://schema.org/Recipe">
+                <div class="c-media__thumb c-recipe--video">
+                    <img itemprop="image" src="img/Rectangle%2042.jpg" alt="">
+                </div>
+                <div class="c-media-horizontal__details">
+                    <h3 class="c-media__title" itemprop="name"><a href="#">طريقة عمل القريدس ماسالا </a></h3>
+                    <p class="c-media__description">ظار ساعة بعد التصفير ومن ثم فتحها لتتشرب الماء المتبقي لانتظار ساعة بعد التصفير ومن ثم
+                        فتحها لتتشرب الماء المتبقي لانتظار ساعة بعد التصفير ومن ثم فتحها لتتشرب الم</p>
+                    <div class="c-media__author">
+                        <a href="#">
+                              <span class="c-media__author__icon">
+                                    <img src="img/basmaty-user@2x-100.jpg" alt="">
+                              </span>
+                            <span class="c-media__author__name" itemprop="author">فريق بسمتي </span>
+                        </a>
+                    </div>
                 </div>
             </article>
         </div>
+
     </section>
-    <section class="c-section">
-        <div class="container">
-            <h2 class="c-section-title section-title--lines"><span>وصفات     <strong>متعلقه</strong>     </span></h2>
-            <div class="o-layout o-layout--3">
-                <article class="c-media" itemscope itemtype="http://schema.org/Recipe">
-                    <div class="c-media__thumb c-recipe--video">
-                        <img itemprop="image" src="img/Rectangle%2042.jpg" alt="">
-                    </div>
+    <div class="c-pagination">
 
-                    <h3 class="c-media__title" itemprop="name"><a href="#">طريقة عمل القريدس ماسالا </a></h3>
-                    <p class="c-media__description">سهل وسريع</p>
-                    <div class="c-media__rating">
-                        <div class="c-rating">
-                            <div class="c-rating__stars" data-rating="3"></div>
-                            <span>3/5</span>
-                        </div>
-                    </div>
-                    <div class="c-media__author">
-                        <a href="#">
-                              <span class="c-media__author__icon">
-                                    <img src="img/basmaty-user@2x-100.jpg" alt="">
-                              </span>
-                            <span class="c-media__author__name" itemprop="author">فريق بسمتي </span>
-                        </a>
-                    </div>
-                </article>
-                <article class="c-media" itemscope itemtype="http://schema.org/Recipe">
-                    <div class="c-media__thumb c-recipe--video">
-                        <img itemprop="image" src="img/Dajaj-al-seyd-slider.jpg" alt="">
-                    </div>
+        <div class="c-pagination__pages">
 
-                    <h3 class="c-media__title" itemprop="name"><a href="#">طريقة عمل القريدس ماسالا </a></h3>
-                    <p class="c-media__description">سهل وسريع</p>
-                    <div class="c-media__rating">
-                        <div class="c-rating">
-                            <div class="c-rating__stars" data-rating="3"></div>
-                            <span>3/5</span>
-                        </div>
-                    </div>
-                    <div class="c-media__author">
-                        <a href="#">
-                              <span class="c-media__author__icon">
-                                    <img src="img/basmaty-user@2x-100.jpg" alt="">
-                              </span>
-                            <span class="c-media__author__name" itemprop="author">فريق بسمتي </span>
-                        </a>
-                    </div>
-                </article>
-                <article class="c-media" itemscope itemtype="http://schema.org/Recipe">
-                    <div class="c-media__thumb c-recipe--video">
-                        <img itemprop="image" src="img/Rectangle%204.jpg" alt="">
-                    </div>
+            <a href="#" class="c-pagination--next">
+                <svg class="c-icon c-icon--next" fill="#fff" width="12" height="12" viewBox="0 0 477.175 477.175">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="#icon-next"></use>
+                </svg>
+            </a>
+            <a href="#" class="selected">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <span>...</span>
+            <a href="#">20</a>
+            <a href="#">21</a>
+            <a href="#">22</a>
 
-                    <h3 class="c-media__title" itemprop="name"><a href="#">طريقة عمل القريدس ماسالا </a></h3>
-                    <p class="c-media__description">سهل وسريع</p>
-                    <div class="c-media__rating">
-                        <div class="c-rating">
-                            <div class="c-rating__stars" data-rating="3"></div>
-                            <span>3/5</span>
-                        </div>
-                    </div>
-                    <div class="c-media__author">
-                        <a href="#">
-                              <span class="c-media__author__icon">
-                                    <img src="img/basmaty-user@2x-100.jpg" alt="">
-                              </span>
-                            <span class="c-media__author__name" itemprop="author">فريق بسمتي </span>
-                        </a>
-                    </div>
-                </article>
-            </div>
-            <br>
-            <div class="o-layout o-layout--4">
-                <article class="c-media" itemscope itemtype="http://schema.org/Recipe">
-                    <div class="c-media__thumb c-recipe--video">
-                        <img itemprop="image" src="img/Rectangle%2042.jpg" alt="">
-                    </div>
-
-                    <h3 class="c-media__title" itemprop="name"><a href="#">طريقة عمل القريدس ماسالا </a></h3>
-                    <p class="c-media__description">سهل وسريع</p>
-                </article>
-                <article class="c-media" itemscope itemtype="http://schema.org/Recipe">
-                    <div class="c-media__thumb">
-                        <img itemprop="image" src="img/Dajaj-al-seyd-slider.jpg" alt="">
-                    </div>
-                    <h3 class="c-media__title" itemprop="name"><a href="#">طريقة عمل القريدس ماسالا </a></h3>
-                    <p class="c-media__description">سهل وسريع</p>
-                </article>
-                <article class="c-media" itemscope itemtype="http://schema.org/Recipe">
-                    <div class="c-media__thumb c-recipe--video">
-                        <img itemprop="image" src="img/Rectangle%204.jpg" alt="">
-                    </div>
-                    <h3 class="c-media__title" itemprop="name"><a href="#">طريقة عمل القريدس ماسالا </a></h3>
-                    <p class="c-media__description">سهل وسريع</p>
-                </article>
-                <article class="c-media" itemscope itemtype="http://schema.org/Recipe">
-                    <div class="c-media__thumb c-recipe--video">
-                        <img itemprop="image" src="img/Rectangle%2042.jpg" alt="">
-                    </div>
-
-                    <h3 class="c-media__title" itemprop="name"><a href="#">طريقة عمل القريدس ماسالا </a></h3>
-                    <p class="c-media__description">سهل وسريع</p>
-                </article>
-                <article class="c-media" itemscope itemtype="http://schema.org/Recipe">
-                    <div class="c-media__thumb c-recipe--video">
-                        <img itemprop="image" src="img/Dajaj-al-seyd-slider.jpg" alt="">
-                    </div>
-                    <h3 class="c-media__title" itemprop="name"><a href="#">طريقة عمل القريدس ماسالا </a></h3>
-                    <p class="c-media__description">سهل وسريع</p>
-                </article>
-                <article class="c-media" itemscope itemtype="http://schema.org/Recipe">
-                    <div class="c-media__thumb eo">
-                        <img itemprop="image" src="img/Rectangle%204.jpg" alt="">
-                    </div>
-                    <h3 class="c-media__title" itemprop="name"><a href="#">طريقة عمل القريدس ماسالا </a></h3>
-                    <p class="c-media__description">سهل وسريع</p>
-                </article>
-                <article class="c-media" itemscope itemtype="http://schema.org/Recipe">
-                    <div class="c-media__thumb c-recipe--video">
-                        <img itemprop="image" src="img/Dajaj-al-seyd-slider.jpg" alt="">
-                    </div>
-                    <h3 class="c-media__title" itemprop="name"><a href="#">طريقة عمل القريدس ماسالا </a></h3>
-                    <p class="c-media__description">سهل وسريع</p>
-                </article>
-                <article class="c-media" itemscope itemtype="http://schema.org/Recipe">
-                    <div class="c-media__thumb">
-                        <img itemprop="image" src="img/Rectangle%204.jpg" alt="">
-                    </div>
-                    <h3 class="c-media__title" itemprop="name"><a href="#">طريقة عمل القريدس ماسالا </a></h3>
-                    <p class="c-media__description">سهل وسريع</p>
-                </article>
-            </div>
+            <a href="#" class="c-pagination--back disable">
+                <svg class="c-icon c-icon--back" fill="#fff" width="12" height="12" viewBox="0 0 129 129">
+                    <use xmlns="http://www.w3.org/2000/svg" xlink:href="#icon-back"></use>
+                </svg>
+            </a>
         </div>
-    </section>
+
+    </div>
 </main>
+
+
 <footer class="c-footer" role="contentinfo" itemscope itemtype="http://schema.org/WPFooter">
     <div class="container">
         <div class="o-layout o-layout--3">

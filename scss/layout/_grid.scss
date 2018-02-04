@@ -12,7 +12,7 @@
   }
 }
 .container--small{
-  width: 750px;
+  width: 700px;
 }
 .o-layout {
   //grid fallback:
@@ -96,3 +96,9 @@
 
 }
 
+.o-layout--2 {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 16px;
+  position: relative;
+}
