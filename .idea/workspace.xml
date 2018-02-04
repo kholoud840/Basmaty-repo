@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6ff3992-fc13-4045-8ee4-1fcc6255551d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/recipe.html" afterPath="$PROJECT_DIR$/recipe.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/app.css" afterPath="$PROJECT_DIR$/scss/app.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/app.css.map" afterPath="$PROJECT_DIR$/scss/app.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/components/_recipe.scss" afterPath="$PROJECT_DIR$/scss/components/_recipe.scss" />
@@ -25,7 +23,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="recipe.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="recipe.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/recipe.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="432">
@@ -56,11 +54,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_recipe.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_recipe.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scss/components/_recipe.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="123" column="18" lean-forward="false" selection-start-line="123" selection-start-column="18" selection-end-line="123" selection-end-column="18" />
+            <state relative-caret-position="442">
+              <caret line="205" column="15" lean-forward="false" selection-start-line="205" selection-start-column="15" selection-end-line="205" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -223,8 +221,8 @@
       <find>au</find>
       <find>border</find>
       <find>pop</find>
-      <find>rev</find>
       <find>tex</find>
+      <find>rev</find>
     </findStrings>
     <replaceStrings>
       <replace>c-media</replace>
@@ -278,8 +276,8 @@
         <option value="$PROJECT_DIR$/scss/components/_media-horizontal.scss" />
         <option value="$PROJECT_DIR$/scss/layout/_grid.scss" />
         <option value="$PROJECT_DIR$/search-results.html" />
-        <option value="$PROJECT_DIR$/scss/components/_recipe.scss" />
         <option value="$PROJECT_DIR$/recipe.html" />
+        <option value="$PROJECT_DIR$/scss/components/_recipe.scss" />
       </list>
     </option>
   </component>
@@ -695,12 +693,12 @@
       <workItem from="1517700072493" duration="197000" />
       <workItem from="1517722251214" duration="988000" />
       <workItem from="1517755494429" duration="1198000" />
-      <workItem from="1517771443569" duration="601000" />
+      <workItem from="1517771443569" duration="875000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="210008000" />
+    <option name="totallyTimeSpent" value="210282000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1934" height="1046" extended-state="0" />
@@ -1095,14 +1093,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scss/components/_recipe.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="123" column="18" lean-forward="false" selection-start-line="123" selection-start-column="18" selection-end-line="123" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/recipe.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
@@ -1129,6 +1119,14 @@
             <element signature="n#ul#0;n#div#1;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#2;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/components/_recipe.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="205" column="15" lean-forward="false" selection-start-line="205" selection-start-column="15" selection-end-line="205" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>

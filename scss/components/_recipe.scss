@@ -200,6 +200,7 @@
   border-bottom: 1px solid #eee;
   padding-bottom: 8px;
   @include mq($from: 1266px) {
+    border-bottom: none;
     position: absolute;
     top: 320px;
     background: #fff;
