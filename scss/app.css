@@ -1112,6 +1112,8 @@ svg {
   resize: none;
   outline: none;
   overflow: hidden; }
+  .c-recipe__review textarea:focus {
+    border-color: #E25C1C; }
 
 .c-recipe__summary-data {
   padding-top: 8px;

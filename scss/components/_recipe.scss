@@ -119,6 +119,10 @@
     resize: none;
     outline: none;
     overflow: hidden;
+
+    &:focus{
+      border-color: $color-brand-primary;
+    }
   }
 }
 
