@@ -567,12 +567,14 @@ html {
 
 .c-button {
   display: block;
+  min-width: 132px;
   font-family: "sstarabicroman-regular";
   background: #E25C1C;
   border: none;
   border-radius: 4px;
   color: #f3f3f3;
-  padding: 10px 32px 16px;
+  padding-top: 4px;
+  padding-bottom: 12px;
   font-size: 16px;
   margin: 32px 0;
   cursor: pointer; }
@@ -624,6 +626,9 @@ html {
 .c-form__wrapper {
   padding: 32px 32px 16px;
   border-bottom: 1px solid #eee; }
+
+.c-form__recovery {
+  font-size: 14px; }
 
 .c-form__message {
   font-size: 14px;
