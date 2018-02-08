@@ -11,9 +11,15 @@
     padding-right: 0;
   }
 }
-.container--small{
+
+.container--small {
   width: 700px;
 }
+
+.container--tiny {
+  width: 516px;
+}
+
 .o-layout {
   //grid fallback:
   display: flex;

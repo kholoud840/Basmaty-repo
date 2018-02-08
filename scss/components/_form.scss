@@ -37,3 +37,39 @@
   }
 }
 
+
+.c-form{
+  border-radius: $unit-tiny;
+  box-shadow: 0 0 6px #d9d9d9;
+  position: relative;
+  background: #fff;
+  p{
+    margin-bottom: $unit;
+  }
+
+  &::before{
+    content: '';
+    width:65px;
+    height: 65px;
+    background: url(../img/basmaty-smile.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    left:50%;
+    top: -40px;
+    transform: translateX(-50%);
+
+  }
+}
+.c-form__wrapper{
+  padding:  $unit-large  $unit-large $unit;
+  border-bottom: 1px solid #eee;
+}
+
+.c-form__message{
+  font-size: 14px;
+  padding: 16px 16px 18px;;
+    a{
+      color: $color-brand-primary;
+      font-weight: 700;
+    }
+}

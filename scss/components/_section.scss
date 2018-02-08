@@ -65,3 +65,18 @@
   }
 
 }
+
+.c-section--pattern {
+  position: relative;
+  padding-top: 100px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 360px;
+    background: linear-gradient(transparent 350px, #f8f5eb 350px) no-repeat,
+    url(../img/home/hero-pattern.png) no-repeat center center, #f8f5eb;
+    background-size: cover;
+  }
+}

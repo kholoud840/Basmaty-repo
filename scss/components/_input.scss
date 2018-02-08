@@ -2,16 +2,14 @@
   @include basefont-regular;
   flex: 1;
   display: block;
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border-radius: 4px;
   border: 0.5px solid #ccc;
   line-height: 26px;
   font-size: $unit;
   padding: $unit-small;
-  border-left: none;
+  width: 100%;
   position: relative;
   transition: 0.4s;
-
 
   @include mq($from: tablet) {
     padding-right: 45px;
@@ -19,29 +17,50 @@
 
   &:focus {
     outline: none;
-    border:0.5px solid $color-brand-secondary;
+    border: 0.5px solid $color-brand-secondary;
     background: #f8f5eb;
   }
 }
 
-
 .c-input--search {
+  border-radius: 0;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-left: none;
   background: #fff;
   border-bottom: 2px solid #e9ab46;
   @include mq($from: tablet) {
     background: #fff url(../img/home/Shape.svg) no-repeat center right 10px;
   }
   &:focus {
-    border-bottom:2px solid $color-brand-secondary;
+    border-bottom: 2px solid $color-brand-secondary;
   }
 }
 
-
-
 .c-input--subscription {
+  border-radius: 0;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-left: none;
   background: #fff;
   @include mq($from: tablet) {
     background: #fff url(../img/svg/mail.svg) no-repeat center right 10px;
+  }
+
+}
+
+.c-input--email {
+  background: #fff;
+  background: #fff url(../img/svg/arroba.svg) no-repeat center right 10px;
+  @include mq($from: tablet) {
+  }
+
+}
+
+.c-input--password {
+  background: #fff;
+  background: #fff url(../img/svg/locked.svg) no-repeat center right 10px;
+  @include mq($from: tablet) {
   }
 
 }

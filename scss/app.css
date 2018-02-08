@@ -148,6 +148,9 @@ html {
 .container--small {
   width: 700px; }
 
+.container--tiny {
+  width: 516px; }
+
 .o-layout {
   display: flex;
   justify-content: space-between;
@@ -255,6 +258,18 @@ html {
     .c-section--filters .container {
       display: flex;
       justify-content: center; } }
+
+.c-section--pattern {
+  position: relative;
+  padding-top: 100px; }
+  .c-section--pattern::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 360px;
+    background: linear-gradient(transparent 350px, #f8f5eb 350px) no-repeat, url(../img/home/hero-pattern.png) no-repeat center center, #f8f5eb;
+    background-size: cover; }
 
 .c-header {
   box-shadow: 0 0 4px #b8b8b8;
@@ -485,13 +500,12 @@ html {
   font-family: "sstarabicroman-regular";
   flex: 1;
   display: block;
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
+  border-radius: 4px;
   border: 0.5px solid #ccc;
   line-height: 26px;
   font-size: 16px;
   padding: 8px;
-  border-left: none;
+  width: 100%;
   position: relative;
   transition: 0.4s; }
   @media (min-width: 46.25em) {
@@ -503,6 +517,10 @@ html {
     background: #f8f5eb; }
 
 .c-input--search {
+  border-radius: 0;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-left: none;
   background: #fff;
   border-bottom: 2px solid #e9ab46; }
   @media (min-width: 46.25em) {
@@ -512,10 +530,22 @@ html {
     border-bottom: 2px solid #F4AC29; }
 
 .c-input--subscription {
+  border-radius: 0;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-left: none;
   background: #fff; }
   @media (min-width: 46.25em) {
     .c-input--subscription {
       background: #fff url(../img/svg/mail.svg) no-repeat center right 10px; } }
+
+.c-input--email {
+  background: #fff;
+  background: #fff url(../img/svg/arroba.svg) no-repeat center right 10px; }
+
+.c-input--password {
+  background: #fff;
+  background: #fff url(../img/svg/locked.svg) no-repeat center right 10px; }
 
 .button-1 {
   border: 1px solid #D4D4D4;
@@ -534,6 +564,18 @@ html {
   @media (min-width: 46.25em) {
     .c-button--email {
       background: #E25C1C; } }
+
+.c-button {
+  display: block;
+  font-family: "sstarabicroman-regular";
+  background: #E25C1C;
+  border: none;
+  border-radius: 4px;
+  color: #f3f3f3;
+  padding: 10px 32px 16px;
+  font-size: 16px;
+  margin: 32px 0;
+  cursor: pointer; }
 
 .c-form--small label {
   display: none; }
@@ -560,6 +602,35 @@ html {
       padding: 10px 16px 14px 16px; }
       .c-form--small form button span {
         display: block; } }
+
+.c-form {
+  border-radius: 4px;
+  box-shadow: 0 0 6px #d9d9d9;
+  position: relative;
+  background: #fff; }
+  .c-form p {
+    margin-bottom: 16px; }
+  .c-form::before {
+    content: '';
+    width: 65px;
+    height: 65px;
+    background: url(../img/basmaty-smile.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 50%;
+    top: -40px;
+    transform: translateX(-50%); }
+
+.c-form__wrapper {
+  padding: 32px 32px 16px;
+  border-bottom: 1px solid #eee; }
+
+.c-form__message {
+  font-size: 14px;
+  padding: 16px 16px 18px; }
+  .c-form__message a {
+    color: #E25C1C;
+    font-weight: 700; }
 
 .c-tags {
   text-align: center;
