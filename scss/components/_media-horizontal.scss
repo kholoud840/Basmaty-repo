@@ -1,4 +1,17 @@
 
+.c-media-horizontal{
+  margin-bottom: $unit-large;
+
+  .c-media__title{
+    margin-bottom: $unit-small;
+  }
+  .c-media__description{
+    margin-bottom: $unit-small;
+  }
+  .c-media__thumb{
+    margin-bottom: 0;
+  }
+}
 
 .c-media-horizontal__details {
   padding-left: 100px;
@@ -7,3 +20,4 @@
 .search-results{
   border-bottom: 1px solid #eee;
 }
+

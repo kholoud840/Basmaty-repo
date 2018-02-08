@@ -98,7 +98,7 @@
 
 .o-layout--2 {
   display: grid;
-  grid-template-columns: 1fr 4fr;
-  grid-gap: 16px;
+  grid-template-columns: 1fr 3fr;
+  grid-column-gap: $unit;
   position: relative;
 }

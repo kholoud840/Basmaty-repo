@@ -1,0 +1,62 @@
+@media (min-width: 740px) {
+  .c-filter__body {
+    position: absolute;
+    top: 100%;
+    background: $color-brand-primary;
+    width: 100%;
+    z-index: 1;
+    min-width: 150px;
+
+    li {
+      @include not-last-child() {
+        border-bottom: 1px solid #fff;
+      }
+    }
+    input {
+      position: absolute;
+      visibility: hidden;
+    }
+    input[type="checkbox"]:checked + label:before {
+      background-image: url(../img/svg/check.svg);
+    }
+    label {
+      color: #fff;
+      padding: 10px 8px;
+      font-size: 14px;
+      line-height: 1;
+      align-items: center;
+      display: flex;
+      cursor: pointer;
+
+      &::before {
+        content: '';
+        background: #f8f5eb;
+        height: 1rem;
+        width: 1rem;
+        margin-left: .6875rem;
+      }
+    }
+  }
+
+  .c-filter__title {
+    padding: 12px 0 16px;
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+    span {
+      font-weight: 700;
+      color: #fff;
+    }
+
+  }
+
+  .c-filter {
+    position: relative;
+    transition: .4s;
+    @include not-first-child() {
+      margin-right: $unit-large;
+    }
+  }
+
+}

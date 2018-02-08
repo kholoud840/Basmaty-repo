@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>نتائج البحث</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="scss/app.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/app.js"></script>
 </head>
 <body>
 <svg style="display: none;">
@@ -92,6 +94,13 @@
         <g id="icon-back">
             <path d="M88.6 121.3c.8.8 1.8 1.2 2.9 1.2s2.1-.4 2.9-1.2c1.6-1.6 1.6-4.2 0-5.8l-51-51 51-51c1.6-1.6 1.6-4.2 0-5.8s-4.2-1.6-5.8 0l-54 53.9c-1.6 1.6-1.6 4.2 0 5.8l54 53.9z"/>
         </g>
+    </defs>
+
+    <defs>
+        <g id="icon-arrow-down">
+            <path d="M121.3 34.6c-1.6-1.6-4.2-1.6-5.8 0l-51 51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8 0-1.6 1.6-1.6 4.2 0 5.8l53.9 53.9c.8.8 1.8 1.2 2.9 1.2 1 0 2.1-.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2.1-5.8z"/>
+        </g>
+
     </defs>
 
 </svg>
@@ -217,6 +226,135 @@
         </div>
     </section>
 
+    <section class="c-section--filters">
+        <div class="container">
+            <div class="c-filter">
+                <div class="c-filter__title">
+                    <span>نوع الطبخ</span>
+                    <span>
+                                    <svg class="c-icon c-icon--arrow-down" width="16px" height="16px"
+                                         viewBox="0 0 129 129">
+                <use xmlns="http://www.w3.org/2000/svg" xlink:href="#icon-arrow-down"></use>
+            </svg>
+                    </span>
+                </div>
+                <div class="c-filter__body">
+                    <ul>
+                        <li class="c-filter-item">
+                            <input type="checkbox" id="quick" value="">
+                            <label for="quick">سهل وسريع</label>
+                        </li>
+                        <li class="c-filter-item">
+                            <input type="checkbox" id="" value="">
+                            <label for="quick">فواكه</label>
+                        </li>
+                        <li class="c-filter-item">
+                            <input type="checkbox" id="" value="">
+                            <label for="quick">خضار</label>
+                        </li>
+                        <li class="c-filter-item">
+                            <input type="checkbox" id="" value="">
+                            <label for="quick">حلويات</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="c-filter">
+                <div class="c-filter__title">
+                    <span>المكونات</span>
+                    <span>
+                                    <svg class="c-icon c-icon--arrow-down" width="16px" height="16px"
+                                         viewBox="0 0 129 129">
+                <use xmlns="http://www.w3.org/2000/svg" xlink:href="#icon-arrow-down"></use>
+            </svg>
+                    </span>
+                </div>
+                <div class="c-filter__body">
+                    <ul>
+                        <li class="c-filter-item">
+                            <input type="checkbox">
+                            <label for="quick">سهل وسريع</label>
+                        </li>
+                        <li class="c-filter-item">
+                            <input type="checkbox">
+                            <label for="quick">فواكه</label>
+                        </li>
+                        <li class="c-filter-item">
+                            <input type="checkbox">
+                            <label for="quick">خضار</label>
+                        </li>
+                        <li class="c-filter-item">
+                            <input type="checkbox">
+                            <label for="quick">حلويات</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="c-filter">
+                <div class="c-filter__title">
+                    <span>المطبخ</span>
+                    <span>
+                                    <svg class="c-icon c-icon--arrow-down" width="16px" height="16px"
+                                         viewBox="0 0 129 129">
+                <use xmlns="http://www.w3.org/2000/svg" xlink:href="#icon-arrow-down"></use>
+            </svg>
+                    </span>
+                </div>
+                <div class="c-filter__body">
+                    <ul>
+                        <li class="c-filter-item">
+                            <input type="checkbox" id="quick" value="">
+                            <label for="quick">سهل وسريع</label>
+                        </li>
+                        <li class="c-filter-item">
+                            <input type="checkbox" id="" value="">
+                            <label for="quick">فواكه</label>
+                        </li>
+                        <li class="c-filter-item">
+                            <input type="checkbox" id="" value="">
+                            <label for="quick">خضار</label>
+                        </li>
+                        <li class="c-filter-item">
+                            <input type="checkbox" id="" value="">
+                            <label for="quick">حلويات</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="c-filter">
+                <div class="c-filter__title">
+                    <span>وقت الطبخ</span>
+                    <span>
+                                    <svg class="c-icon c-icon--arrow-down" width="16px" height="16px"
+                                         viewBox="0 0 129 129">
+                <use xmlns="http://www.w3.org/2000/svg" xlink:href="#icon-arrow-down"></use>
+            </svg>
+                    </span>
+                </div>
+                <div class="c-filter__body">
+                    <ul>
+                        <li class="c-filter-item">
+                            <input type="checkbox" id="quick" value="">
+                            <label for="quick">سهل وسريع</label>
+                        </li>
+                        <li class="c-filter-item">
+                            <input type="checkbox" id="" value="">
+                            <label for="quick">فواكه</label>
+                        </li>
+                        <li class="c-filter-item">
+                            <input type="checkbox" id="" value="">
+                            <label for="quick">خضار</label>
+                        </li>
+                        <li class="c-filter-item">
+                            <input type="checkbox" id="" value="">
+                            <label for="quick">حلويات</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="c-section c-section--search-results">
         <div class="container">
             <article class="c-media-horizontal o-layout--2" itemscope itemtype="http://schema.org/Recipe">
@@ -225,7 +363,8 @@
                 </div>
                 <div class="c-media-horizontal__details">
                     <h3 class="c-media__title" itemprop="name"><a href="#">طريقة عمل القريدس ماسالا </a></h3>
-                    <p class="c-media__description">ظار ساعة بعد التصفير ومن ثم فتحها لتتشرب الماء المتبقي لانتظار ساعة بعد التصفير ومن ثم
+                    <p class="c-media__description">ظار ساعة بعد التصفير ومن ثم فتحها لتتشرب الماء المتبقي لانتظار ساعة
+                        بعد التصفير ومن ثم
                         فتحها لتتشرب الماء المتبقي لانتظار ساعة بعد التصفير ومن ثم فتحها لتتشرب الم</p>
                     <div class="c-media__author">
                         <a href="#">
@@ -243,7 +382,8 @@
                 </div>
                 <div class="c-media-horizontal__details">
                     <h3 class="c-media__title" itemprop="name"><a href="#">طريقة عمل القريدس ماسالا </a></h3>
-                    <p class="c-media__description">ظار ساعة بعد التصفير ومن ثم فتحها لتتشرب الماء المتبقي لانتظار ساعة بعد التصفير ومن ثم
+                    <p class="c-media__description">ظار ساعة بعد التصفير ومن ثم فتحها لتتشرب الماء المتبقي لانتظار ساعة
+                        بعد التصفير ومن ثم
                         فتحها لتتشرب الماء المتبقي لانتظار ساعة بعد التصفير ومن ثم فتحها لتتشرب الم</p>
                     <div class="c-media__author">
                         <a href="#">
@@ -261,7 +401,8 @@
                 </div>
                 <div class="c-media-horizontal__details">
                     <h3 class="c-media__title" itemprop="name"><a href="#">طريقة عمل القريدس ماسالا </a></h3>
-                    <p class="c-media__description">ظار ساعة بعد التصفير ومن ثم فتحها لتتشرب الماء المتبقي لانتظار ساعة بعد التصفير ومن ثم
+                    <p class="c-media__description">ظار ساعة بعد التصفير ومن ثم فتحها لتتشرب الماء المتبقي لانتظار ساعة
+                        بعد التصفير ومن ثم
                         فتحها لتتشرب الماء المتبقي لانتظار ساعة بعد التصفير ومن ثم فتحها لتتشرب الم</p>
                     <div class="c-media__author">
                         <a href="#">
@@ -279,7 +420,8 @@
                 </div>
                 <div class="c-media-horizontal__details">
                     <h3 class="c-media__title" itemprop="name"><a href="#">طريقة عمل القريدس ماسالا </a></h3>
-                    <p class="c-media__description">ظار ساعة بعد التصفير ومن ثم فتحها لتتشرب الماء المتبقي لانتظار ساعة بعد التصفير ومن ثم
+                    <p class="c-media__description">ظار ساعة بعد التصفير ومن ثم فتحها لتتشرب الماء المتبقي لانتظار ساعة
+                        بعد التصفير ومن ثم
                         فتحها لتتشرب الماء المتبقي لانتظار ساعة بعد التصفير ومن ثم فتحها لتتشرب الم</p>
                     <div class="c-media__author">
                         <a href="#">
