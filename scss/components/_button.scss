@@ -1,18 +1,17 @@
-.button-1{
+.button-1 {
   border: 1px solid #D4D4D4;
   border-radius: 5px;
-  background-color: rgba(255,255,255,0.43);
+  background-color: rgba(255, 255, 255, 0.43);
 }
 
-
-.c-button--search{
+.c-button--search {
   background: $color-brand-primary url(../img/svg/Shape-white.svg) no-repeat 10px center;
   @include mq($from: tablet) {
     background: $color-brand-primary;
-    }
+  }
 }
 
-.c-button--email{
+.c-button--email {
   background: $color-brand-primary url(../img/svg/mail-white.svg) no-repeat 10px center;
   background-size: 26px;
   @include mq($from: tablet) {
@@ -20,18 +19,28 @@
   }
 }
 
-.c-button{
-  display: block;
-  min-width:132px;
+.c-button {
+  //display: block;
+  min-width: 132px;
   @include basefont-regular;
   background: $color-brand-primary;
-  border:none;
+  border: none;
   border-radius: 4px;
   color: $color-white;
   padding-top: 4px;
   padding-bottom: 12px;
   font-size: $unit;
-  margin: 32px 0 ;
+  margin: 32px 0;
   cursor: pointer;
 }
+
+.c-button--facebook {
+  background: #4d70a8;
+  padding-left:16px ;
+  padding-right:16px;
+  margin-top: 0;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
 

@@ -76,3 +76,25 @@
       font-weight: 700;
     }
 }
+
+.c-form__options{
+  text-align: center;
+  margin: 16px 0;
+  span{
+    display: block;
+    color: $color-brand-primary;
+    z-index: 2;
+    position: relative;
+    &::after{
+      content: '';
+      width: 40px;
+      height: 40px;
+      background-color: #f8f5eb;
+      border-radius: 50%;
+      position: absolute;
+      transform: translateX(66%);
+      z-index: -1;
+
+    }
+  }
+}

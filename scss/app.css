@@ -507,7 +507,8 @@ html {
   padding: 8px;
   width: 100%;
   position: relative;
-  transition: 0.4s; }
+  transition: 0.4s;
+  background: #fff; }
   @media (min-width: 46.25em) {
     .c-input {
       padding-right: 45px; } }
@@ -540,12 +541,16 @@ html {
       background: #fff url(../img/svg/mail.svg) no-repeat center right 10px; } }
 
 .c-input--email {
-  background: #fff;
   background: #fff url(../img/svg/arroba.svg) no-repeat center right 10px; }
 
 .c-input--password {
-  background: #fff;
   background: #fff url(../img/svg/locked.svg) no-repeat center right 10px; }
+
+.c-input--username {
+  background: #fff url(../img/svg/profile.svg) no-repeat center right 10px; }
+
+.c-input--name {
+  background: #fff url(../img/svg/id-card.svg) no-repeat center right 10px; }
 
 .button-1 {
   border: 1px solid #D4D4D4;
@@ -566,7 +571,6 @@ html {
       background: #E25C1C; } }
 
 .c-button {
-  display: block;
   min-width: 132px;
   font-family: "sstarabicroman-regular";
   background: #E25C1C;
@@ -578,6 +582,14 @@ html {
   font-size: 16px;
   margin: 32px 0;
   cursor: pointer; }
+
+.c-button--facebook {
+  background: #4d70a8;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-top: 0;
+  display: inline-block;
+  margin-bottom: 16px; }
 
 .c-form--small label {
   display: none; }
@@ -636,6 +648,24 @@ html {
   .c-form__message a {
     color: #E25C1C;
     font-weight: 700; }
+
+.c-form__options {
+  text-align: center;
+  margin: 16px 0; }
+  .c-form__options span {
+    display: block;
+    color: #E25C1C;
+    z-index: 2;
+    position: relative; }
+    .c-form__options span::after {
+      content: '';
+      width: 40px;
+      height: 40px;
+      background-color: #f8f5eb;
+      border-radius: 50%;
+      position: absolute;
+      transform: translateX(66%);
+      z-index: -1; }
 
 .c-tags {
   text-align: center;

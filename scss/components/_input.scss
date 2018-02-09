@@ -10,6 +10,7 @@
   width: 100%;
   position: relative;
   transition: 0.4s;
+  background: #fff;
 
   @include mq($from: tablet) {
     padding-right: 45px;
@@ -50,17 +51,17 @@
 }
 
 .c-input--email {
-  background: #fff;
   background: #fff url(../img/svg/arroba.svg) no-repeat center right 10px;
-  @include mq($from: tablet) {
-  }
-
 }
 
 .c-input--password {
-  background: #fff;
   background: #fff url(../img/svg/locked.svg) no-repeat center right 10px;
-  @include mq($from: tablet) {
-  }
+}
 
+.c-input--username {
+  background: #fff url(../img/svg/profile.svg) no-repeat center right 10px;
+}
+
+.c-input--name {
+  background: #fff url(../img/svg/id-card.svg) no-repeat center right 10px;
 }
