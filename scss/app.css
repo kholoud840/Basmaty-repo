@@ -249,9 +249,6 @@ html {
     .c-section--recipe {
       padding-top: 0; } }
 
-.c-section--search-results {
-  border-bottom: 1px solid #eee; }
-
 .c-section--filters {
   background: #E25C1C; }
   @media (min-width: 20em) {
@@ -270,6 +267,15 @@ html {
     height: 360px;
     background: linear-gradient(transparent 350px, #f8f5eb 350px) no-repeat, url(../img/home/hero-pattern.png) no-repeat center center, #f8f5eb;
     background-size: cover; }
+
+.c-section--category {
+  background: linear-gradient(transparent 350px, #f8f5eb 350px) no-repeat, url(../img/home/hero-pattern.png) no-repeat center center, #f8f5eb;
+  background-size: cover; }
+  .c-section--category .c-tags {
+    text-align: initial;
+    margin-top: 16px; }
+  .c-section--category h2 {
+    font-size: 20px; }
 
 .c-header {
   box-shadow: 0 0 4px #b8b8b8;
@@ -674,7 +680,8 @@ html {
 .c-tag {
   display: inline-block;
   margin-left: 6px;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  background: rgba(255, 255, 255, 0.4); }
   .c-tag a {
     font-size: 14px;
     display: inline-block;
@@ -890,7 +897,7 @@ svg {
       height: 100%;
       z-index: 2; }
 
-.c-media__description {
+.c-media__cat {
   font-size: 14px;
   order: 0; }
 
@@ -920,6 +927,10 @@ svg {
 .c-media__rating {
   order: 2;
   margin-bottom: 4px; }
+
+.c-media__description {
+  color: #4F4F4F;
+  order: 2; }
 
 .c-store-badge {
   display: inline-block;
@@ -1360,11 +1371,13 @@ svg {
     height: 16px;
     vertical-align: middle; }
 
-.c-pagination a, .c-pagination span {
-  color: #4F4F4F;
-  border: 1px solid #ccc;
-  border-radius: 50%;
-  padding: 10px; }
+.c-pagination {
+  border-top: 1px solid #ccc; }
+  .c-pagination a, .c-pagination span {
+    color: #4F4F4F;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    padding: 10px; }
 
 .c-pagination__pages a, .c-pagination__pages span {
   display: inline-block;
@@ -1381,7 +1394,7 @@ svg {
   margin-bottom: 32px; }
   .c-media-horizontal .c-media__title {
     margin-bottom: 8px; }
-  .c-media-horizontal .c-media__description {
+  .c-media-horizontal .c-media__cat {
     margin-bottom: 8px; }
   .c-media-horizontal .c-media__thumb {
     margin-bottom: 0; }

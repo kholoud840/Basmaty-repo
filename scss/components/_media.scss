@@ -56,7 +56,7 @@
 
 }
 
-.c-media__description {
+.c-media__cat {
   font-size: 14px;
   order: 0;
 }
@@ -93,5 +93,11 @@
 .c-media__rating {
   order: 2;
   margin-bottom: $unit-tiny;
+
+}
+
+.c-media__description{
+  color: $color-black;
+  order:2;
 
 }

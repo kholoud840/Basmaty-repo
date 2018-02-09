@@ -1,11 +1,13 @@
-.c-tags{
+.c-tags {
   text-align: center;
   margin-top: $unit-large;
 }
+
 .c-tag {
   display: inline-block;
   margin-left: 6px;
   margin-bottom: 10px;
+  background: rgba(255, 255, 255, 0.4);
 
   a {
     font-size: 14px;
@@ -20,7 +22,6 @@
     @include mq($from: tablet) {
       padding: 0 22px 6px 22px;
     }
-
 
     &:hover {
       background: #f8f5eb;
