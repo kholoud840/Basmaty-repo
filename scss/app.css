@@ -269,6 +269,8 @@ html {
     background-size: cover; }
 
 .c-section--category {
+  padding-top: 16px;
+  padding-bottom: 16px;
   background: linear-gradient(transparent 350px, #f8f5eb 350px) no-repeat, url(../img/home/hero-pattern.png) no-repeat center center, #f8f5eb;
   background-size: cover; }
   .c-section--category .c-tags {
