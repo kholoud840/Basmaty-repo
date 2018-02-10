@@ -1394,6 +1394,8 @@ svg {
 
 .c-pagination {
   border-top: 1px solid #ccc; }
+  .c-pagination li {
+    display: inline; }
   .c-pagination a, .c-pagination span {
     color: #4F4F4F;
     border: 1px solid #ccc;
