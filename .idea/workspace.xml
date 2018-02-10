@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6ff3992-fc13-4045-8ee4-1fcc6255551d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/app.css" afterPath="$PROJECT_DIR$/scss/app.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/app.css.map" afterPath="$PROJECT_DIR$/scss/app.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/components/_button.scss" afterPath="$PROJECT_DIR$/scss/components/_button.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/components/_form.scss" afterPath="$PROJECT_DIR$/scss/components/_form.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/components/_input.scss" afterPath="$PROJECT_DIR$/scss/components/_input.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -45,11 +43,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_button.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_button.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scss/components/_button.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="40" column="22" lean-forward="true" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+            <state relative-caret-position="1150">
+              <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_input.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scss/components/_input.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="21" column="10" lean-forward="true" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -165,7 +173,6 @@
         <option value="$PROJECT_DIR$/scss/layout/_grid.scss" />
         <option value="$PROJECT_DIR$/Login.html" />
         <option value="$PROJECT_DIR$/sign-up.html" />
-        <option value="$PROJECT_DIR$/scss/components/_input.scss" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/recipe.html" />
         <option value="$PROJECT_DIR$/scss/app.css" />
@@ -181,6 +188,7 @@
         <option value="$PROJECT_DIR$/scss/components/_footer.scss" />
         <option value="$PROJECT_DIR$/scss/components/_form.scss" />
         <option value="$PROJECT_DIR$/scss/components/_button.scss" />
+        <option value="$PROJECT_DIR$/scss/components/_input.scss" />
       </list>
     </option>
   </component>
@@ -540,12 +548,12 @@
       <workItem from="1518265584237" duration="686000" />
       <workItem from="1518283153916" duration="1793000" />
       <workItem from="1518286779402" duration="1383000" />
-      <workItem from="1518288611667" duration="863000" />
+      <workItem from="1518288611667" duration="1207000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="255389000" />
+    <option name="totallyTimeSpent" value="255733000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="0" width="1921" height="1046" extended-state="0" />
@@ -776,13 +784,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scss/components/_input.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="599">
-          <caret line="66" column="1" lean-forward="true" selection-start-line="66" selection-start-column="1" selection-end-line="66" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scss/components/_media-horizontal.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -943,8 +944,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scss/components/_button.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="40" column="22" lean-forward="true" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+        <state relative-caret-position="1150">
+          <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/components/_input.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="21" column="10" lean-forward="true" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
           <folding />
         </state>
       </provider>

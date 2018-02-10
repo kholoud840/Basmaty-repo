@@ -519,14 +519,15 @@ html {
   flex: 1;
   display: block;
   border-radius: 4px;
-  border: 0.5px solid #ccc;
+  border: 0.5px solid #ddd;
   line-height: 26px;
   font-size: 16px;
   padding: 8px;
   width: 100%;
   position: relative;
   transition: 0.4s;
-  background: #fff; }
+  background: #fff;
+  box-shadow: 0px 2px 6px #f3f3f3; }
   @media (min-width: 46.25em) {
     .c-input {
       padding-right: 45px; } }
@@ -541,7 +542,8 @@ html {
   border-bottom-right-radius: 4px;
   border-left: none;
   background: #fff;
-  border-bottom: 2px solid #e9ab46; }
+  border-bottom: 2px solid #e9ab46;
+  box-shadow: none; }
   @media (min-width: 46.25em) {
     .c-input--search {
       background: #fff url(../img/home/Shape.svg) no-repeat center right 10px; } }
