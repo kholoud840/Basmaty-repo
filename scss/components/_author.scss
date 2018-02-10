@@ -1,0 +1,52 @@
+.c-author {
+  text-align: center;
+}
+
+.c-author__avatar {
+  border-radius: 50%;
+  overflow: hidden;
+  height: 112px;
+  width: 112px;
+  box-shadow: 0 0 2px 0 $color-brand-primary, 0 4px 14px 0 #f4c65e;
+  border: 6px solid #fff;
+  margin: 0 auto;
+
+  img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.c-author__name {
+  font-size: 20px;
+}
+
+.c-author__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include mq($from: tablet) {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
+.c-author__share {
+  display: flex;
+}
+
+.c-author__details {
+  display: flex;
+  margin-bottom: 12px;
+  @include mq($from: tablet) {
+    margin-bottom: 0;
+  }
+
+  .c-viewers {
+    @include mq($from: tablet) {
+      margin-right: 64px;
+    }
+
+  }
+}
