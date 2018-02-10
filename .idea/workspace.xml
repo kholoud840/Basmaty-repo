@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6ff3992-fc13-4045-8ee4-1fcc6255551d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/app.css" afterPath="$PROJECT_DIR$/scss/app.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/app.css.map" afterPath="$PROJECT_DIR$/scss/app.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/components/_author.scss" afterPath="$PROJECT_DIR$/scss/components/_author.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/components/_form.scss" afterPath="$PROJECT_DIR$/scss/components/_form.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/components/_footer.scss" afterPath="$PROJECT_DIR$/scss/components/_footer.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -54,11 +52,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_form.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_form.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scss/components/_form.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="267">
               <caret line="63" column="24" lean-forward="false" selection-start-line="63" selection-start-column="24" selection-end-line="63" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_footer.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scss/components/_footer.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="567">
+              <caret line="49" column="30" lean-forward="false" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -139,7 +147,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>not</find>
       <find>border-b</find>
       <find>bad</find>
       <find>play</find>
@@ -169,6 +176,7 @@
       <find>hor</find>
       <find>share</find>
       <find>view</find>
+      <find>wrapp</find>
     </findStrings>
     <replaceStrings>
       <replace>c-media</replace>
@@ -198,7 +206,6 @@
         <option value="$PROJECT_DIR$/img/svg/Shape.svg" />
         <option value="$PROJECT_DIR$/img/svg/Shape-white.svg" />
         <option value="$PROJECT_DIR$/img/svg/mail-white.svg" />
-        <option value="$PROJECT_DIR$/scss/components/_footer.scss" />
         <option value="$PROJECT_DIR$/scss/components/_titles.scss" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/scss/components/_store-badge.scss" />
@@ -232,6 +239,7 @@
         <option value="$PROJECT_DIR$/author.html" />
         <option value="$PROJECT_DIR$/scss/components/_author.scss" />
         <option value="$PROJECT_DIR$/scss/components/_form.scss" />
+        <option value="$PROJECT_DIR$/scss/components/_footer.scss" />
       </list>
     </option>
   </component>
@@ -590,12 +598,12 @@
       <workItem from="1518263166704" duration="1797000" />
       <workItem from="1518265584237" duration="686000" />
       <workItem from="1518283153916" duration="1793000" />
-      <workItem from="1518286779402" duration="927000" />
+      <workItem from="1518286779402" duration="1218000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="254070000" />
+    <option name="totallyTimeSpent" value="254361000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="0" width="1921" height="1046" extended-state="0" />
@@ -718,13 +726,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="575">
           <caret line="23" column="67" lean-forward="false" selection-start-line="23" selection-start-column="67" selection-end-line="23" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/components/_footer.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="72" lean-forward="false" selection-start-line="6" selection-start-column="71" selection-end-line="6" selection-end-column="72" />
         </state>
       </provider>
     </entry>
@@ -992,6 +993,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="267">
           <caret line="63" column="24" lean-forward="false" selection-start-line="63" selection-start-column="24" selection-end-line="63" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/components/_footer.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="49" column="30" lean-forward="false" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
           <folding />
         </state>
       </provider>

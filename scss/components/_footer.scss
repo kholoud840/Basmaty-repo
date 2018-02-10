@@ -47,7 +47,11 @@
 .c-footer__social-media {
   li {
     display: inline-block;
-    margin-right: $unit-tiny;
+    margin-right: $unit-small;
+    @include mq($from: desktop){
+      margin-right: $unit-tiny;
+    }
+
   }
   a {
     display: inline-block;

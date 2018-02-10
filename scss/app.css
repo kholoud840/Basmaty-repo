@@ -461,7 +461,10 @@ html {
 
 .c-footer__social-media li {
   display: inline-block;
-  margin-right: 4px; }
+  margin-right: 8px; }
+  @media (min-width: 61.25em) {
+    .c-footer__social-media li {
+      margin-right: 4px; } }
 .c-footer__social-media a {
   display: inline-block; }
   .c-footer__social-media a svg {
