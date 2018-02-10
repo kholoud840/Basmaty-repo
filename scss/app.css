@@ -671,6 +671,9 @@ html {
 .c-form__message {
   font-size: 14px;
   padding: 16px 16px 18px; }
+  @media (min-width: 46.25em) {
+    .c-form__message {
+      padding: 16px 32px 16px; } }
   .c-form__message a {
     color: #E25C1C;
     font-weight: 700; }

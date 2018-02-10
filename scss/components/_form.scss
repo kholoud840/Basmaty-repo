@@ -77,7 +77,10 @@
 }
 .c-form__message{
   font-size: 14px;
-  padding: 16px 16px 18px;;
+  padding: 16px 16px 18px;
+  @include mq($from :tablet){
+    padding:  $unit $unit-large $unit;
+  }
     a{
       color: $color-brand-primary;
       font-weight: 700;
