@@ -43,6 +43,10 @@
   box-shadow: 0 0 6px #d9d9d9;
   position: relative;
   background: #fff;
+  label{
+    margin-bottom: $unit-tiny;
+    display: inline-block;
+  }
   p{
     margin-bottom: $unit;
   }
