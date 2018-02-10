@@ -131,10 +131,10 @@
           stroke-dashoffset: 0;
         }
       }
+
     }
 
     .header__menu__item {
-      //display: inline-block;
       padding-right: 28px;
       display: flex;
       flex-direction: column;
@@ -142,7 +142,6 @@
       a {
         display: inline-block;
         padding-top: 18px;
-        //padding-bottom: 26px;
       }
     }
   }

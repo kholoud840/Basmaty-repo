@@ -829,7 +829,8 @@ svg {
   align-items: center; }
   .c-rating span {
     font-size: 14px;
-    color: #999; }
+    color: #999;
+    margin-right: 4px; }
 
 .c-rating__stars {
   padding: 0;
