@@ -651,8 +651,11 @@ html {
     transform: translateX(-50%); }
 
 .c-form__wrapper {
-  padding: 32px 32px 16px;
+  padding: 32px 16px;
   border-bottom: 1px solid #eee; }
+  @media (min-width: 46.25em) {
+    .c-form__wrapper {
+      padding: 32px 32px 16px; } }
 
 .c-form__recovery {
   font-size: 14px; }

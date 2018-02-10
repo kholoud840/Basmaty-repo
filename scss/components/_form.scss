@@ -61,8 +61,11 @@
   }
 }
 .c-form__wrapper{
-  padding:  $unit-large  $unit-large $unit;
+  padding:  $unit-large  $unit;
   border-bottom: 1px solid #eee;
+  @include mq($from :tablet){
+    padding:  $unit-large  $unit-large $unit;
+  }
 }
 
 .c-form__recovery{
