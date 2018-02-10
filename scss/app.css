@@ -813,13 +813,15 @@ svg {
   content: "";
   height: 1px;
   background: #eee;
-  flex: 1; }
+  flex: 1;
+  margin-top: 10px; }
 
 .section-title--lines:after {
   content: "";
   height: 1px;
   background: #eee;
-  flex: 1; }
+  flex: 1;
+  margin-top: 10px; }
 
 .c-rating {
   font-size: 16px;
