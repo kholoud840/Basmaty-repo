@@ -1387,7 +1387,8 @@ svg {
   background: #8A8A8A; }
 
 .disable {
-  background: #cccccc; }
+  background: #cccccc;
+  pointer-events: none; }
 
 .c-pagination {
   text-align: center;
