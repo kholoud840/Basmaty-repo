@@ -1038,6 +1038,10 @@ svg {
   margin-right: 16px;
   padding-right: 30px;
   background: url(../img/svg/eye.svg) no-repeat top 6px right; }
+  .c-viewers span {
+    font-size: 14px; }
+  .c-viewers stong {
+    font-size: 14px; }
 
 .c-featured-recipe {
   box-shadow: 0 0 18px #e5e5e5;
