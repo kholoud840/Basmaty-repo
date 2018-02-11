@@ -30,7 +30,10 @@
   }
   a {
     display: inline-block;
-    padding: 0 $unit-small;
+    padding-left:  $unit-small;
+    @include not-first-child() {
+      padding-right:$unit-small;
+    }
     @media (max-width:500px){
         font-size: 12px;
     }
