@@ -749,8 +749,8 @@ svg {
 
 .c-icon--circle {
   background: #f8f5eb;
-  width: 26px;
-  height: 26px;
+  width: 34px;
+  height: 34px;
   text-align: center;
   border-radius: 50%;
   display: inline-block;
@@ -1040,7 +1040,7 @@ svg {
   background: url(../img/svg/eye.svg) no-repeat top 6px right; }
   .c-viewers span {
     font-size: 14px; }
-  .c-viewers stong {
+  .c-viewers strong {
     font-size: 14px; }
 
 .c-featured-recipe {
