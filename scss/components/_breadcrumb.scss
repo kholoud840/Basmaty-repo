@@ -2,40 +2,39 @@
   li {
     display: inline-block;
 
-    @media (min-width: 600px) {
-      @include not-last-child() {
-        /*::after{
-          content: '';
-          display: inline-block;
-          width:16px;
-          height:16px;
-          vertical-align: middle;
-          background: url("../img/svg/angle-pointing-to-left.svg") no-repeat center right;
-        }*/
-        padding-left: 16px;
-        background: url(../img/svg/angle-pointing-to-left.svg) no-repeat top 12px left;
-        background-size: 16px;
-      }
+    // @media (min-width: 600px) {
+    @include not-first-child() { /*last*/
+      /*::after{
+        content: '';
+        display: inline-block;
+        width:16px;
+        height:16px;
+        vertical-align: middle;
+        background: url("../img/svg/angle-pointing-to-left.svg") no-repeat center right;
+      }*/
+      padding-right: 20px; /*left*/
+      background: url(../img/svg/angle-pointing-to-left.svg) no-repeat top 12px right;
+      background-size: 16px;
+      //  }
     }
     @media (max-width: 600px) {
       @include not-first-child() {
-        padding-left: 0;
-        padding-right: 16px;
-        background: url(../img/svg/angle-pointing-to-left.svg) no-repeat top 16px right;
-        background-size: 14px;
-        display: block;
+        //padding-left: 0;
+        //padding-right: 16px;
+        // background: url(../img/svg/angle-pointing-to-left.svg) no-repeat top 16px right;
+        //background-size: 14px;
+        //display: block;
       }
-
     }
   }
   a {
     display: inline-block;
-    padding-left:  $unit-small;
+    //padding-left: $unit-small;
     @include not-first-child() {
-      padding-right:$unit-small;
+      padding-right: $unit-small;
     }
-    @media (max-width:500px){
-        font-size: 12px;
+    @media (max-width: 500px) {
+      font-size: 12px;
     }
   }
   a.current {
