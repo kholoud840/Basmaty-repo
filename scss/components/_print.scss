@@ -1,0 +1,72 @@
+@media print {
+
+  header, footer, nav {
+    display: none !important;
+  }
+
+  body {
+    line-height: 1.3;
+    color: #000;
+    border: 1px solid #ccc;
+  }
+
+  h1 {
+    font-size: 24pt
+  }
+
+  h2 {
+    font-size: 14pt;
+    margin-top: 25px
+  }
+
+  header:after {
+    display: block;
+    content: "www.basmaty.com"
+  }
+
+  a {
+    color: #000
+  }
+
+  a:after {
+    content: " [http://www.basmaty.com/" attr(href) "]";
+    font-size: 80%;
+    word-wrap: break-word;
+  }
+
+  .c-section--related-recipes, .c-recipe__review, .c-section--search,
+  .c-breadcrumb, .c-recipe__popularity, .c-recipe__side-content {
+    display: none;
+  }
+
+  .c-recipe--video {
+    &::before {
+      background: none;
+
+    }
+  }
+  h1, h2, h3, h4, span, strong {
+    color: #000 !important;
+    font-weight: 300;
+  }
+
+  .c-recipe__image-container {
+    display: block;
+    width: 200px;
+    &::after {
+      padding-bottom: 50%;
+    }
+  }
+
+  .c-recipe__summary-data {
+    strong {
+      font-weight: 300;
+    }
+  }
+  .c-recipe__title {
+    margin-bottom: $unit;
+    margin-top: 16px;
+  }
+
+}
+

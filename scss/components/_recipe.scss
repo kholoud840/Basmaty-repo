@@ -53,6 +53,7 @@
 }
 
 .c-recipe__print {
+  cursor: pointer;
   display: none;
   @include mq($from: desktop) {
     display: block;

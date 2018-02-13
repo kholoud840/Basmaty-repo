@@ -6,6 +6,12 @@ $(".toggle").on("click" , function(){
 
 
 
+
+    $('.c-recipe__print').click(function(event){
+        window.print();
+    });
+
+////////////////////////////////////////////
     $(".c-filter .c-filter__body").hide();
 
     $(".c-filter .c-filter__title").on("click", function () {
