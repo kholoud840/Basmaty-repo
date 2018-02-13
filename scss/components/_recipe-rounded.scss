@@ -8,6 +8,16 @@
   {
    margin-bottom: $unit-large;
   }
+  &:hover{
+  .c-recipe-rounded__img{
+    transition: 0.4s;
+
+      border-color: $color-brand-primary;
+    }
+  .c-recipe-rounded__category{
+    border-color: $color-brand-primary;
+  }
+  }
 }
 
 
@@ -20,8 +30,11 @@
   overflow: hidden;
   margin: 0 auto;
   margin-bottom: -36px;
+  transition: 0.4s;
+  &:hover{
+    border-color: $color-brand-primary;
+  }
   img{
-
     object-fit: cover;
     height: 100%;
     width: 100%;

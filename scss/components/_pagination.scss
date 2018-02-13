@@ -1,17 +1,4 @@
 
-.c-pagination--next {
-  background: #8A8A8A;
-}
-
-.c-pagination--back {
-  background: #8A8A8A;
-}
-
-.disable {
-  background: #cccccc;
-  pointer-events: none;
-}
-
 .c-pagination {
   text-align: center;
   padding: $unit-large 0;
@@ -19,16 +6,16 @@
     width: 16px;
     height: 16px;
     vertical-align: middle;
+    margin-top: -4px;
   }
 }
 
-
-.c-pagination{
-  border-top:1px solid #ccc;
-  li{
+.c-pagination {
+  border-top: 1px solid #ccc;
+  li {
     display: inline;
   }
-  a,span{
+  a, span {
     color: $color-black;
     border: 1px solid #ccc;
     border-radius: 50%;
@@ -37,8 +24,8 @@
 
 }
 
-.c-pagination__pages  {
-  a,span{
+.c-pagination__pages {
+  a, span {
     display: inline-block;
     width: 40px;
     height: 40px;
@@ -51,5 +38,28 @@
   a.selected {
     background: $color-brand-primary;
     color: $color-white;
+    border-color: $color-brand-primary;
   }
+}
+
+.c-pagination--back, .c-pagination--next {
+  background: #8A8A8A;
+  border-color: #8A8A8A;
+}
+
+.disable {
+  background: #cccccc;
+  pointer-events: none;
+}
+
+@media (max-width: 740px){
+  .c-pagination__pages{
+    li a ,li span{
+      display: none;
+    }
+    .c-pagination--next,.c-pagination--back{
+      display: inline-block;
+    }
+  }
+
 }
