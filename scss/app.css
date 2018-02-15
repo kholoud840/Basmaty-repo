@@ -219,13 +219,13 @@ html {
 
 .c-section--hero {
   box-shadow: 0 4px 10px #e7e7e7;
-  background: linear-gradient(transparent, #F9F9F9 99%) no-repeat, url(../img/home/hero-pattern.png) no-repeat center center;
+  background: linear-gradient(rgba(255, 0, 0, 0), #F9F9F9 99%) no-repeat, url(../img/home/hero-pattern.png) no-repeat center center;
   background-size: cover;
   background-position: center;
   padding-bottom: 30px; }
   @media (min-width: 61.25em) {
     .c-section--hero {
-      background: url(../img/home/basmaty-pattern2.png) no-repeat center bottom, linear-gradient(transparent, #F9F9F9 99%) no-repeat, url(../img/home/hero-pattern.png) no-repeat center center, #F9F9F9;
+      background: url(../img/home/basmaty-pattern2.png) no-repeat center bottom, linear-gradient(rgba(255, 0, 0, 0), #F9F9F9 99%) no-repeat, url(../img/home/hero-pattern.png) no-repeat center center, #F9F9F9;
       background-size: 100%, 100% 200px, cover;
       background-position: bottom, bottom, center;
       padding-bottom: 70px; } }
@@ -236,13 +236,13 @@ html {
         font-size: 32px; } }
 
 .c-section--newsletter {
-  background: url(../img/home/newsletter-pattern.png) no-repeat center bottom, linear-gradient(transparent, #FDFAF3 99%) no-repeat, #FDFAF3;
+  background: url(../img/home/newsletter-pattern.png) no-repeat center bottom, linear-gradient(rgba(255, 0, 0, 0), #FDFAF3 99%) no-repeat, #FDFAF3;
   background-size: cover;
   background-position: center;
   border-top: 3px solid #F4AC29; }
 
 .c-section--recipe {
-  background: linear-gradient(transparent 350px, #fff 350px) no-repeat, url(../img/home/hero-pattern.png) no-repeat center center, #f7f7f7;
+  background: linear-gradient(rgba(255, 0, 0, 0) 350px, #fff 350px) no-repeat, url(../img/home/hero-pattern.png) no-repeat center center, #f7f7f7;
   background-size: 100% auto;
   background-position: top;
   padding-bottom: 0; }
@@ -266,13 +266,13 @@ html {
     top: 0;
     width: 100%;
     height: 360px;
-    background: linear-gradient(transparent 350px, #f8f5eb 350px) no-repeat, url(../img/home/hero-pattern.png) no-repeat center center, #f8f5eb;
+    background: linear-gradient(rgba(255, 0, 0, 0) 350px, #f8f5eb 350px) no-repeat, url(../img/home/hero-pattern.png) no-repeat center center, #f8f5eb;
     background-size: cover; }
 
 .c-section--category {
   padding-top: 16px;
   padding-bottom: 16px;
-  background: linear-gradient(transparent 350px, #f8f5eb 350px) no-repeat, url(../img/home/hero-pattern.png) no-repeat center center, #f8f5eb;
+  background: linear-gradient(rgba(255, 0, 0, 0) 350px, #f8f5eb 350px) no-repeat, url(../img/home/hero-pattern.png) no-repeat center center, #f8f5eb;
   background-size: cover; }
   .c-section--category .c-tags {
     text-align: initial;
@@ -281,7 +281,7 @@ html {
     font-size: 20px; }
 
 .c-section--author {
-  background: linear-gradient(transparent 350px, #f8f5eb 350px) no-repeat, url(../img/home/hero-pattern.png) no-repeat center center, #f8f5eb;
+  background: linear-gradient(rgba(255, 0, 0, 0) 350px, #f8f5eb 350px) no-repeat, url(../img/home/hero-pattern.png) no-repeat center center, #f8f5eb;
   background-size: cover; }
 
 .c-section--author__info {
@@ -531,7 +531,8 @@ html {
   transition: background-color 0.4s,border 0.4s;
   background: #fff;
   box-shadow: 0px 2px 6px #f3f3f3;
-  padding-right: 32px; }
+  padding-right: 32px;
+  -webkit-appearance: textfield; }
   .c-input:focus {
     outline: none;
     border: 0.5px solid #F4AC29;
