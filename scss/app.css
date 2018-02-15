@@ -386,7 +386,9 @@ html {
         align-items: center; }
         .c-header__menu .header__menu__item a {
           display: inline-block;
-          padding-top: 18px; } }
+          padding-top: 18px; }
+        .c-header__menu .header__menu__item:hover svg path {
+          stroke-dashoffset: 0; } }
   .c-header__menu a.active {
     color: #E25C1C;
     font-weight: 700; }

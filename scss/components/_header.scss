@@ -96,6 +96,7 @@
       a.active {
         border-right: 2px solid $color-brand-primary;
       }
+
     }
   }
 
@@ -142,6 +143,14 @@
       a {
         display: inline-block;
         padding-top: 18px;
+      }
+
+      &:hover {
+        svg {
+          path {
+            stroke-dashoffset: 0;
+          }
+        }
       }
     }
   }
