@@ -242,7 +242,7 @@ html {
   border-top: 3px solid #F4AC29; }
 
 .c-section--recipe {
-  background: linear-gradient(rgba(255, 0, 0, 0) 350px, #fff 350px) no-repeat, url(../img/home/hero-pattern.png) no-repeat center center, #f7f7f7;
+  background: linear-gradient(rgba(255, 0, 0, 0) 250px, #fff 250px) no-repeat, url(../img/home/hero-pattern.png) no-repeat center center, #f7f7f7;
   background-size: 100% auto;
   background-position: top;
   padding-bottom: 0; }
@@ -374,8 +374,8 @@ html {
       .c-header__menu svg {
         display: inline-block; }
         .c-header__menu svg path {
-          stroke-dasharray: 22;
-          stroke-dashoffset: 22;
+          stroke-dasharray: 23;
+          stroke-dashoffset: 24;
           transition: all 0.2s ease-out; }
         .c-header__menu svg:hover path {
           stroke-dashoffset: 0; }
@@ -1350,11 +1350,9 @@ svg {
   @media (min-width: 79.125em) {
     .c-recipe__side-content {
       border-bottom: none;
-      position: absolute;
       top: 320px;
       background: #fff;
-      right: 100%;
-      width: 40%; } }
+      right: 100%; } }
 
 .c-recipe__brought-by {
   display: inline-block;
@@ -1402,6 +1400,23 @@ svg {
 
 .c-recipe__author__info {
   display: inline-block; }
+
+.recipe-content {
+  max-width: 700px; }
+
+.recipe-top-content .c-recipe__side-content {
+  margin-top: 10px; }
+@media (min-width: 62.5em) {
+  .recipe-top-content {
+    display: flex; }
+    .recipe-top-content .recipe-content {
+      flex-basis: 700px; }
+    .recipe-top-content .c-recipe__side-content {
+      margin-top: 70px; } }
+@media (max-width: 700px) {
+  .recipe-top-content .inner-container {
+    display: flex;
+    justify-content: space-between; } }
 
 .c-pagination {
   text-align: center;

@@ -213,112 +213,123 @@
         </div>
     </section>
     <section class="c-section c-section--recipe">
-        <div class="container container--small">
-            <ul class="c-breadcrumb">
-                <li><a href="#">الرئيسيه</a></li>
-                <li><a href="#">طبق رئيسي</a></li>
-                <li><a class="current" href="#">طريقة عمل ساندويش شاورما في البيت</a></li>
-            </ul>
-            <article class="c-recipe">
+        <div class="container">
+            <div class="recipe-content">
+                <ul class="c-breadcrumb">
+                    <li><a href="#">الرئيسيه</a></li>
+                    <li><a href="#">طبق رئيسي</a></li>
+                    <li><a class="current" href="#">طريقة عمل ساندويش شاورما في البيت</a></li>
+                </ul>
                 <h1 class="c-recipe__title">طريقة عمل ساندويش شاورما في البيت</h1>
                 <p class="c-recipe__summary">وصفة شاورما دجاج, وصفه مميزه مقدمه من دجاج انتاج اكتشفو طريقة عمل هذه
                     الوصفه بالفيدو من بسمتي طريقة عمل هذه الوصفه بالفيدو من بسمتي</p>
-                <div class="c-recipe__image-container c-recipe--video">
-                    <img src="img/Chicken-Shawarma-Sandwich-Slider-1.jpg" alt="hicken-Shawarma-Sandwich">
-                </div>
-                <div class="c-recipe__popularity">
-                    <div class="c-rating">
-                        <div class="c-rating__stars" data-rating="3"></div>
-                        <span>3/5</span>
-                    </div>
-                    <div class="c-viewers">
-                        <span><strong>2.5k</strong> مشاهده</span>
-                    </div>
-                    <div class="c-recipe__print" onClick="printPage()">
-                        <svg class="c-icon c-icon--print" width="26" height="26" viewBox="0 0 64 64" fill="#F4AC29">
-                            <use xmlns="http://www.w3.org/2000/svg" xlink:href="#icon-print"></use>
-                        </svg>
-                        <span>طباعة الوصفه</span>
-                    </div>
-                </div>
-                <div class="c-recipe__side-content">
-                    <div class="c-recipe__brought-by"> هذا الفيديو برعاية <strong>زيت زيتون سيرجيلا</strong>
-                    </div>
-                    <div class="c-recipe__author">
+            </div>
+
+            <article class="c-recipe">
+                   <div class="recipe-top-content">
+                       <div class="c-recipe__image-container c-recipe--video recipe-content">
+                           <img src="img/Chicken-Shawarma-Sandwich-Slider-1.jpg" alt="hicken-Shawarma-Sandwich">
+                       </div>
+                       <div class="c-recipe__side-content">
+                           <div class="c-recipe__brought-by"> هذا الفيديو برعاية <strong>زيت زيتون سيرجيلا</strong>
+                           </div>
+                           <div class="inner-container">
+                               <div class="c-recipe__author">
                          <span class="c-recipe__author__icon">
                              <img src="img/basmaty-user@2x-100.jpg" alt="">
                          </span>
-                        <div class="c-recipe__author__info">
-                        <span>بواسطه</span>
-                        <strong>فريق بسمتي</strong>
+                                   <div class="c-recipe__author__info">
+                                       <span>بواسطه</span>
+                                       <strong>فريق بسمتي</strong>
+                                   </div>
+                               </div>
+                               <div class="c-recipe__share">
+                                   <span>شارك الوصفه مع محبيك</span>
+                                   <ul class="c-header__social-media">
+                                       <li><a class="c-icon--circle c-icon--facebook" href="#"></a></li>
+                                       <li><a class="c-icon--circle c-icon--instagram" href="#"></a></li>
+                                       <li><a class="c-icon--circle c-icon--youtube" href="#"></a></li>
+                                   </ul>
+                               </div>
+                           </div>
+
+                       </div>
+                   </div>
+                <div class="recipe-content">
+                    <div class="c-recipe__popularity">
+                        <div class="c-rating">
+                            <div class="c-rating__stars" data-rating="3"></div>
+                            <span>3/5</span>
+                        </div>
+                        <div class="c-viewers">
+                            <span><strong>2.5k</strong> مشاهده</span>
+                        </div>
+                        <div class="c-recipe__print" onClick="printPage()">
+                            <svg class="c-icon c-icon--print" width="26" height="26" viewBox="0 0 64 64" fill="#F4AC29">
+                                <use xmlns="http://www.w3.org/2000/svg" xlink:href="#icon-print"></use>
+                            </svg>
+                            <span>طباعة الوصفه</span>
                         </div>
                     </div>
-                    <div class="c-recipe__share">
-                        <span>شارك الوصفه مع محبيك</span>
-                        <ul class="c-header__social-media">
-                            <li><a class="c-icon--circle c-icon--facebook" href="#"></a></li>
-                            <li><a class="c-icon--circle c-icon--instagram" href="#"></a></li>
-                            <li><a class="c-icon--circle c-icon--youtube" href="#"></a></li>
+                    <div class="c-recipe__summary-data">
+                        <div class="c-recipe__summary-data-item c-recipe--yield">
+                            <span>تكفي</span>
+                            <span>6 <strong>اشخاص</strong></span>
+                        </div>
+                        <div class="c-recipe__summary-data-item c-recipe--active-time">
+                            <span>الطهي</span>
+                            <span>2 <strong>ساعه</strong></span>
+                        </div>
+                        <div class="c-recipe__summary-data-item c-recipe--total-time">
+                            <span>التحضير</span>
+                            <span>1 <strong>ساعه</strong></span>
+                        </div>
+
+                    </div>
+                    <div class="c-recipe__content">
+                        <h2 class="c-recipe__section-title">المقادير</h2>
+                        <h3 class="c-recipe__section-subtitle">لورق العنب:</h3>
+                        <ul class="c-recipe__ingredients">
+                            <li>حبة بطاطا مقشره ومقطعه الى شرائح</li>
+                            <li>ورق عنب حجم وسط</li>
+                            <li>قطع متوسطه من اللحم مع العظم</li>
+                            <li>كوسا حسب الرغبة</li>
+                            <li>حبة بندورة مفرومه ناعم</li>
+                            <li>ملعقة صغيره زيت زيتون</li>
+                            <li>ملعقة صغيره زيت زيتون</li>
+                        </ul>
+                        <h3 class="c-recipe__section-subtitle"> للحشو:</h3>
+                        <ul class="c-recipe__ingredients">
+                            <li>حبة بطاطا مقشره ومقطعه الى شرائح</li>
+                            <li>ورق عنب حجم وسط</li>
+                            <li>قطع متوسطه من اللحم مع العظم</li>
+                            <li>كوسا حسب الرغبة</li>
+                            <li>حبة بندورة مفرومه ناعم</li>
+                            <li>ملعقة صغيره زيت زيتون</li>
+                            <li>ملعقة صغيره زيت زيتون</li>
+                        </ul>
+                        <h2 class="c-recipe__section-title">طريقة التحضير:</h2>
+                        <ul class="c-recipe__instructions">
+                            <li>نقع ورق العنب بماء مغلي مدة 10 دقائق لتسهيل عمليه لفه</li>
+                            <li>حبة بطاطا مقشره ومقطعه الى شرائح</li>
+                            <li>غسل اللحمه جيدا وتتبيلها بزيت الزيتون والفلفل الاسود</li>
+                            <li>تجهيز الحشوة بجميع المكونات وخلطها جيدا ونبدأ بحشو الكوسا ولف الورق</li>
+                            <li>الانتظار ساعة بعد التصفير ومن ثم فتحها لتتشرب الماء المتبقي لانتظار ساعة بعد التصفير ومن ثم
+                                فتحها لتتشرب الماء المتبقي لانتظار ساعة بعد التصفير ومن ثم فتحها لتتشرب الماء المتبقي
+                            </li>
+                            <li>حبة بطاطا مقشره ومقطعه الى شرائح</li>
+                            <li>غسل اللحمه جيدا وتتبيلها بزيت الزيتون والفلفل الاسود</li>
+                            <li>تجهيز الحشوة بجميع المكونات وخلطها جيدا ونبدأ بحشو الكوسا ولف الورق</li>
                         </ul>
                     </div>
+                    <div class="c-recipe__review">
+                        <h3>اكتب تعليقك</h3>
+                        <form action="#">
+                            <textarea rows="6"></textarea>
+                        </form>
+                    </div>
                 </div>
-                <div class="c-recipe__summary-data">
-                    <div class="c-recipe__summary-data-item c-recipe--yield">
-                        <span>تكفي</span>
-                        <span>6 <strong>اشخاص</strong></span>
-                    </div>
-                    <div class="c-recipe__summary-data-item c-recipe--active-time">
-                        <span>الطهي</span>
-                        <span>2 <strong>ساعه</strong></span>
-                    </div>
-                    <div class="c-recipe__summary-data-item c-recipe--total-time">
-                        <span>التحضير</span>
-                        <span>1 <strong>ساعه</strong></span>
-                    </div>
 
-                </div>
-                <div class="c-recipe__content">
-                    <h2 class="c-recipe__section-title">المقادير</h2>
-                    <h3 class="c-recipe__section-subtitle">لورق العنب:</h3>
-                    <ul class="c-recipe__ingredients">
-                        <li>حبة بطاطا مقشره ومقطعه الى شرائح</li>
-                        <li>ورق عنب حجم وسط</li>
-                        <li>قطع متوسطه من اللحم مع العظم</li>
-                        <li>كوسا حسب الرغبة</li>
-                        <li>حبة بندورة مفرومه ناعم</li>
-                        <li>ملعقة صغيره زيت زيتون</li>
-                        <li>ملعقة صغيره زيت زيتون</li>
-                    </ul>
-                    <h3 class="c-recipe__section-subtitle"> للحشو:</h3>
-                    <ul class="c-recipe__ingredients">
-                        <li>حبة بطاطا مقشره ومقطعه الى شرائح</li>
-                        <li>ورق عنب حجم وسط</li>
-                        <li>قطع متوسطه من اللحم مع العظم</li>
-                        <li>كوسا حسب الرغبة</li>
-                        <li>حبة بندورة مفرومه ناعم</li>
-                        <li>ملعقة صغيره زيت زيتون</li>
-                        <li>ملعقة صغيره زيت زيتون</li>
-                    </ul>
-                    <h2 class="c-recipe__section-title">طريقة التحضير:</h2>
-                    <ul class="c-recipe__instructions">
-                        <li>نقع ورق العنب بماء مغلي مدة 10 دقائق لتسهيل عمليه لفه</li>
-                        <li>حبة بطاطا مقشره ومقطعه الى شرائح</li>
-                        <li>غسل اللحمه جيدا وتتبيلها بزيت الزيتون والفلفل الاسود</li>
-                        <li>تجهيز الحشوة بجميع المكونات وخلطها جيدا ونبدأ بحشو الكوسا ولف الورق</li>
-                        <li>الانتظار ساعة بعد التصفير ومن ثم فتحها لتتشرب الماء المتبقي لانتظار ساعة بعد التصفير ومن ثم
-                            فتحها لتتشرب الماء المتبقي لانتظار ساعة بعد التصفير ومن ثم فتحها لتتشرب الماء المتبقي
-                        </li>
-                        <li>حبة بطاطا مقشره ومقطعه الى شرائح</li>
-                        <li>غسل اللحمه جيدا وتتبيلها بزيت الزيتون والفلفل الاسود</li>
-                        <li>تجهيز الحشوة بجميع المكونات وخلطها جيدا ونبدأ بحشو الكوسا ولف الورق</li>
-                    </ul>
-                </div>
-                <div class="c-recipe__review">
-                    <h3>اكتب تعليقك</h3>
-                    <form action="#">
-                        <textarea rows="6"></textarea>
-                    </form>
-                </div>
             </article>
         </div>
     </section>
