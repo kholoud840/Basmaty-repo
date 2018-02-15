@@ -1350,7 +1350,6 @@ svg {
   @media (min-width: 79.125em) {
     .c-recipe__side-content {
       border-bottom: none;
-      top: 320px;
       background: #fff;
       right: 100%; } }
 
