@@ -1,14 +1,5 @@
 .c-recipe {
   position: relative;
-  transition: 0.4s;
-  &:hover {
-    .c-recipe__image-container {
-      img {
-        transform: scale(1.2);
-      }
-
-    }
-  }
 }
 
 .c-recipe__title {
@@ -139,11 +130,14 @@
 
 .c-recipe__summary-data {
   border-bottom: 1px solid #eee;
-  padding-top: 32px;
+  padding-top: 16px;
   padding-bottom: 8px;
   display: flex;
   flex-wrap: wrap;
   border-bottom: none;
+  @include mq($from:1000px){
+    padding-top: 32px;
+  }
 }
 
 .c-recipe__summary-data-item {
@@ -215,7 +209,7 @@
 .c-recipe__side-content {
   border-bottom: 1px solid #eee;
   padding-bottom: 8px;
-  @include mq($from: 1266px) {
+  @include mq($from: 1000px) {
     border-bottom: none;
     background: #fff;
     right: 100%;
@@ -224,23 +218,28 @@
 
 .c-recipe__brought-by {
   display: inline-block;
-  padding: 4px 16px;
-  background: orange;
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
+  border-bottom: 2px solid orange;
+  font-size: 14px;
+  padding-bottom: 4px;
 
   Strong {
     font-weight: 700;
   }
-  @include mq($from: 1266px) {
+  @include mq($from: 1000px) {
+    font-size: 16px;
+    border-bottom: none;
+    padding: 4px 16px;
+    background: orange;
     display: inline-block;
     border-radius: 0;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
 
   }
 }
 
 .c-recipe__share {
-  @include mq($from: 1266px) {
+  @include mq($from: 1000px) {
     padding-right: $unit;
   }
 }
@@ -252,8 +251,10 @@
   strng {
     font-weight: 700;
   }
-  padding: $unit 0;
-  @include mq($from: 1266px) {
+  padding-top: 12px;
+  padding-bottom: 8px;
+  @include mq($from: 1000px) {
+    padding: $unit 0;
     padding: $unit-large 0;
     padding-right: $unit;
     display: flex;
@@ -268,10 +269,15 @@
 
 .c-recipe__author__icon {
   display: inline-block;
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
   vertical-align: middle;
-  margin-left: 10px;
+  margin-left: 4px;
+  @include mq($from: 1000px) {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px
+  }
   img {
     width: 100%;
     object-fit: contain;
@@ -301,10 +307,10 @@
       margin-top: 70px;
     }
   }
-.inner-container{
-  @media (max-width: 700px) {
-    display: flex;
-    justify-content: space-between;
+  .inner-container {
+    @media (max-width: 700px) {
+      //display: flex;
+      //justify-content: space-between;
+    }
   }
-}
 }
