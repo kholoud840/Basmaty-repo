@@ -1470,7 +1470,13 @@ svg {
   .c-pagination__pages .c-pagination--next, .c-pagination__pages .c-pagination--back {
     display: inline-block; } }
 .c-media-horizontal {
-  margin-bottom: 32px; }
+  margin-bottom: 32px;
+  transition: transform 0.2s ease-out; }
+  .c-media-horizontal:hover {
+    transform: scale(1.01);
+    background: linear-gradient(to left, #FEF6E8, rgba(0, 0, 0, 0)); }
+    .c-media-horizontal:hover .c-recipe--video:before {
+      transform: translate(-50%, -50%) scale(1.1); }
   .c-media-horizontal .c-media__title {
     margin-bottom: 8px; }
   .c-media-horizontal .c-media__cat {

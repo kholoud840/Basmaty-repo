@@ -1,7 +1,18 @@
 
 .c-media-horizontal{
   margin-bottom: $unit-large;
+  transition: transform 0.2s ease-out;
 
+  &:hover {
+    transform: scale(1.01);
+    background: linear-gradient(to left, $color-orange-light, rgba(0, 0, 0, 0));
+
+    .c-recipe--video {
+      &:before {
+        transform: translate(-50%, -50%) scale(1.1);
+      }
+    }
+  }
   .c-media__title{
     margin-bottom: $unit-small;
   }
@@ -21,3 +32,7 @@
   border-bottom: 1px solid #eee;
 }
 
+.c-media-horizontal {
+
+
+}
