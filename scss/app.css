@@ -434,13 +434,17 @@ html {
       display: inline-block; } }
 
 .c-footer {
-  background-size: 100%, contain;
   border-top: 8px solid #F4AC29;
   color: #f3f3f3;
   padding-top: 32px;
-  padding-bottom: 64px;
-  background: #E25C1C url(../img/home/basmaty-pattern2.png) no-repeat center bottom;
-  background-size: 100% 55px; }
+  padding-bottom: 32px;
+  background: #E25C1C; }
+  @media (min-width: 46.25em) {
+    .c-footer {
+      border-top: 8px solid #F4AC29;
+      padding-bottom: 64px;
+      background: #E25C1C url(../img/home/basmaty-pattern2.png) no-repeat center bottom;
+      background-size: 100% 55px; } }
 
 .c-footer__quick-links {
   border-bottom: 2px solid rgba(0, 0, 0, 0.08);

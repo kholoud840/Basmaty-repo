@@ -1,11 +1,15 @@
 .c-footer {
-  background-size: 100%, contain;
   border-top: $unit-small solid $color-brand-secondary;
   color: $color-white;
   padding-top: $unit-large;
-  padding-bottom: $unit-huge;
-  background: $color-brand-primary url(../img/home/basmaty-pattern2.png) no-repeat center bottom;
-  background-size: 100% 55px;
+  padding-bottom: 32px;
+  background: $color-brand-primary;
+  @include mq($from: tablet) {
+    border-top: $unit-small solid $color-brand-secondary;
+    padding-bottom: $unit-huge;
+    background: $color-brand-primary url(../img/home/basmaty-pattern2.png) no-repeat center bottom;
+    background-size: 100% 55px;
+  }
 }
 
 .c-footer__quick-links {
@@ -38,7 +42,7 @@
     padding-bottom: 0;
     border-bottom: 0;
   }
-  @include mq($from: desktop){
+  @include mq($from: desktop) {
     padding-bottom: $unit-large;
   }
 
@@ -49,7 +53,7 @@
   li {
     display: inline-block;
     margin-right: $unit-small;
-    @include mq($from: desktop){
+    @include mq($from: desktop) {
       margin-right: $unit-tiny;
       margin-bottom: 0;
     }
@@ -110,7 +114,6 @@
     margin-bottom: $unit;
 
   }
-
 
 }
 
