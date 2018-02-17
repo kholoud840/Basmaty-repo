@@ -1,5 +1,5 @@
 
-.c-media-horizontal{
+.c-media-horizontal {
   margin-bottom: $unit-large;
   transition: transform 0.2s ease-out;
 
@@ -13,22 +13,25 @@
       }
     }
   }
-  .c-media__title{
+  .c-media__title {
     margin-bottom: $unit-small;
   }
-  .c-media__cat{
+  .c-media__cat {
     margin-bottom: $unit-small;
   }
-  .c-media__thumb{
+  .c-media__thumb {
     margin-bottom: 0;
+    //align-self: start;
   }
 }
 
 .c-media-horizontal__details {
-  padding-left: 100px;
+  @include mq($from: 750px) {
+    padding-left: 100px;
+  }
 }
 
-.search-results{
+.search-results {
   border-bottom: 1px solid #eee;
 }
 

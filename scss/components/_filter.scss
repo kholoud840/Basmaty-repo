@@ -1,3 +1,9 @@
+.c-section--filters{
+    display: none;
+  @include mq($from:tablet){
+    display: block;
+  }
+}
 @media (min-width: 740px) {
   .c-filter__body {
     position: absolute;
