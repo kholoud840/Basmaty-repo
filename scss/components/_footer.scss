@@ -4,7 +4,7 @@
   color: $color-white;
   padding-top: $unit-large;
   padding-bottom: $unit-huge;
-  background: $color-brand-primary url(../img/home/footer-pattern.png) no-repeat center bottom;
+  background: $color-brand-primary url(../img/home/basmaty-pattern2.png) no-repeat center bottom;
   background-size: 100% 55px;
 }
 
@@ -45,11 +45,13 @@
 }
 
 .c-footer__social-media {
+  margin-bottom: 10px;
   li {
     display: inline-block;
     margin-right: $unit-small;
     @include mq($from: desktop){
       margin-right: $unit-tiny;
+      margin-bottom: 0;
     }
 
   }

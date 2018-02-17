@@ -431,7 +431,7 @@ html {
   color: #f3f3f3;
   padding-top: 32px;
   padding-bottom: 64px;
-  background: #E25C1C url(../img/home/footer-pattern.png) no-repeat center bottom;
+  background: #E25C1C url(../img/home/basmaty-pattern2.png) no-repeat center bottom;
   background-size: 100% 55px; }
 
 .c-footer__quick-links {
@@ -464,21 +464,24 @@ html {
     .c-footer__social-links {
       padding-bottom: 32px; } }
 
-.c-footer__social-media li {
-  display: inline-block;
-  margin-right: 8px; }
-  @media (min-width: 61.25em) {
-    .c-footer__social-media li {
-      margin-right: 4px; } }
-.c-footer__social-media a {
-  display: inline-block; }
-  .c-footer__social-media a svg {
-    fill: #fff;
-    width: 32px;
-    height: 32px;
-    transition: fill 0.2s ease-in-out; }
-    .c-footer__social-media a svg:hover {
-      fill: #f2e3b9; }
+.c-footer__social-media {
+  margin-bottom: 10px; }
+  .c-footer__social-media li {
+    display: inline-block;
+    margin-right: 8px; }
+    @media (min-width: 61.25em) {
+      .c-footer__social-media li {
+        margin-right: 4px;
+        margin-bottom: 0; } }
+  .c-footer__social-media a {
+    display: inline-block; }
+    .c-footer__social-media a svg {
+      fill: #fff;
+      width: 32px;
+      height: 32px;
+      transition: fill 0.2s ease-in-out; }
+      .c-footer__social-media a svg:hover {
+        fill: #f2e3b9; }
 
 .c-footer__app-links li {
   display: inline-block; }
