@@ -1443,7 +1443,8 @@ svg {
     display: inline; }
   .c-pagination a, .c-pagination span {
     color: #4F4F4F;
-    border: 1px solid #ccc;
+    border: 1px solid;
+    border-color: #ccc;
     border-radius: 50%;
     padding: 10px; }
 
@@ -1459,12 +1460,13 @@ svg {
   color: #f3f3f3;
   border-color: #E25C1C; }
 
-.c-pagination--back, .c-pagination--next {
+a.c-pagination--back, a.c-pagination--next {
   background: #8A8A8A;
   border-color: #8A8A8A; }
 
-.disable {
+a.disable {
   background: #cccccc;
+  border-color: #cccccc;
   pointer-events: none; }
 
 @media (max-width: 740px) {
